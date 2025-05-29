@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ingjh\\Documents\\ESP_ARQUITECTURA_EMPRESARIAL_DE_SW\\SemestreII\\PICA\\MicroServicios\\MicroservicioSolicitudSAC\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1BA7BF4D-F4B0-4198-8085-181AB395DCF0}|MicroservicioSolicitudSAC\\MicroservicioSolicitudSAC.csproj|c:\\users\\ingjh\\documents\\esp_arquitectura_empresarial_de_sw\\semestreii\\pica\\microservicios\\microserviciosolicitudsac\\microserviciosolicitudsac\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BA7BF4D-F4B0-4198-8085-181AB395DCF0}|MicroservicioSolicitudSAC\\MicroservicioSolicitudSAC.csproj|solutionrelative:microserviciosolicitudsac\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BA7BF4D-F4B0-4198-8085-181AB395DCF0}|MicroservicioSolicitudSAC\\MicroservicioSolicitudSAC.csproj|c:\\users\\ingjh\\documents\\esp_arquitectura_empresarial_de_sw\\semestreii\\pica\\microservicios\\microserviciosolicitudsac\\microserviciosolicitudsac\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{1BA7BF4D-F4B0-4198-8085-181AB395DCF0}|MicroservicioSolicitudSAC\\MicroservicioSolicitudSAC.csproj|solutionrelative:microserviciosolicitudsac\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ingjh\\Documents\\ESP_ARQUITECTURA_EMPRESARIAL_DE_SW\\SemestreII\\PICA\\MicroServicios\\MicroservicioSolicitudSAC\\MicroservicioSolicitudSAC\\Program.cs",
+              "RelativeDocumentMoniker": "MicroservicioSolicitudSAC\\Program.cs",
+              "ToolTip": "C:\\Users\\ingjh\\Documents\\ESP_ARQUITECTURA_EMPRESARIAL_DE_SW\\SemestreII\\PICA\\MicroServicios\\MicroservicioSolicitudSAC\\MicroservicioSolicitudSAC\\Program.cs",
+              "RelativeToolTip": "MicroservicioSolicitudSAC\\Program.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwB8AAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T14:44:41.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\ingjh\\Documents\\ESP_ARQUITECTURA_EMPRESARIAL_DE_SW\\SemestreII\\PICA\\MicroServicios\\MicroservicioSolicitudSAC\\MicroservicioSolicitudSAC\\Dockerfile",
+              "RelativeDocumentMoniker": "MicroservicioSolicitudSAC\\Dockerfile",
+              "ToolTip": "C:\\Users\\ingjh\\Documents\\ESP_ARQUITECTURA_EMPRESARIAL_DE_SW\\SemestreII\\PICA\\MicroServicios\\MicroservicioSolicitudSAC\\MicroservicioSolicitudSAC\\Dockerfile",
+              "RelativeToolTip": "MicroservicioSolicitudSAC\\Dockerfile",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAmwB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-05-29T14:35:20.782Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
