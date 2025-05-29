@@ -1,0 +1,52 @@
+## Archivos de compilación
+bin/
+obj/
+[Ll]og/
+*.log
+
+## Archivos temporales
+*.tmp
+*.temp
+*.bak
+*.swp
+
+## Visual Studio
+.vs/
+*.user
+*.suo
+*.cache
+*.csproj.user
+
+## Archivos de sistema
+*.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+## Configuraciones locales
+appsettings.Development.json
+secrets.json
+
+## Archivos de publicación
+publish/
+out/
+TestResults/
+*.coverage
+*.coveragexml
+
+## Paquetes NuGet descargados
+*.nupkg
+packages/
+*.snupkg
+
+## Archivos de lock
+project.lock.json
+project.fragment.lock.json
+
+## IDEs adicionales
+.idea/
+*.code-workspace
+
+## Rider
+.idea/
+*.sln.iml
