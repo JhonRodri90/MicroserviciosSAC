@@ -1,14 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ingjh\\Documents\\ESP_ARQUITECTURA_EMPRESARIAL_DE_SW\\SemestreII\\PICA\\MicroServicios\\MicroservicioUsuariosSAC\\",
+  "WorkspaceRootPath": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioUsuariosSAC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6C43ECF0-F998-47B4-9552-B5CD1728854E}|MicroservicioUsuariosSAC\\MicroservicioUsuariosSAC.csproj|c:\\users\\ingjh\\documents\\esp_arquitectura_empresarial_de_sw\\semestreii\\pica\\microservicios\\microserviciousuariossac\\microserviciousuariossac\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6C43ECF0-F998-47B4-9552-B5CD1728854E}|MicroservicioUsuariosSAC\\MicroservicioUsuariosSAC.csproj|solutionrelative:microserviciousuariossac\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6C43ECF0-F998-47B4-9552-B5CD1728854E}|MicroservicioUsuariosSAC\\MicroservicioUsuariosSAC.csproj|c:\\users\\ingjh\\documents\\esp_arquitectura_empresarial_de_sw\\semestreii\\pica\\microservicios\\microserviciousuariossac\\microserviciousuariossac\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{6C43ECF0-F998-47B4-9552-B5CD1728854E}|MicroservicioUsuariosSAC\\MicroservicioUsuariosSAC.csproj|solutionrelative:microserviciousuariossac\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{6C43ECF0-F998-47B4-9552-B5CD1728854E}|MicroservicioUsuariosSAC\\MicroservicioUsuariosSAC.csproj|c:\\users\\hp\\onedrive\\documentos\\jhon\\pica\\microserviciossac\\microserviciousuariossac\\microserviciousuariossac\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6C43ECF0-F998-47B4-9552-B5CD1728854E}|MicroservicioUsuariosSAC\\MicroservicioUsuariosSAC.csproj|solutionrelative:microserviciousuariossac\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ingjh\\Documents\\ESP_ARQUITECTURA_EMPRESARIAL_DE_SW\\SemestreII\\PICA\\MicroServicios\\MicroservicioUsuariosSAC\\MicroservicioUsuariosSAC\\Program.cs",
-              "RelativeDocumentMoniker": "MicroservicioUsuariosSAC\\Program.cs",
-              "ToolTip": "C:\\Users\\ingjh\\Documents\\ESP_ARQUITECTURA_EMPRESARIAL_DE_SW\\SemestreII\\PICA\\MicroServicios\\MicroservicioUsuariosSAC\\MicroservicioUsuariosSAC\\Program.cs",
-              "RelativeToolTip": "MicroservicioUsuariosSAC\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T15:57:59.468Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Dockerfile",
-              "DocumentMoniker": "C:\\Users\\ingjh\\Documents\\ESP_ARQUITECTURA_EMPRESARIAL_DE_SW\\SemestreII\\PICA\\MicroServicios\\MicroservicioUsuariosSAC\\MicroservicioUsuariosSAC\\Dockerfile",
-              "RelativeDocumentMoniker": "MicroservicioUsuariosSAC\\Dockerfile",
-              "ToolTip": "C:\\Users\\ingjh\\Documents\\ESP_ARQUITECTURA_EMPRESARIAL_DE_SW\\SemestreII\\PICA\\MicroServicios\\MicroservicioUsuariosSAC\\MicroservicioUsuariosSAC\\Dockerfile",
-              "RelativeToolTip": "MicroservicioUsuariosSAC\\Dockerfile",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-05-29T15:54:14.494Z",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioUsuariosSAC\\MicroservicioUsuariosSAC\\appsettings.json",
+              "RelativeDocumentMoniker": "MicroservicioUsuariosSAC\\appsettings.json",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioUsuariosSAC\\MicroservicioUsuariosSAC\\appsettings.json",
+              "RelativeToolTip": "MicroservicioUsuariosSAC\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-30T11:32:21.665Z",
               "EditorCaption": ""
             }
           ]

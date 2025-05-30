@@ -1,0 +1,6 @@
+@MicroservicioHistorialSolicitudesSAC_HostAddress = http://localhost:5224
+
+GET {{MicroservicioHistorialSolicitudesSAC_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

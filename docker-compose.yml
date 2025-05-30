@@ -22,3 +22,11 @@ services:
       dockerfile: Dockerfile
     ports:
       - "5003:80"
+      
+  microservicio-historial:
+    container_name: MicroservicioHistorialSolicitudesSAC
+    build:
+      context: ./MicroservicioHistorialSolicitudesSAC/MicroservicioHistorialSolicitudesSAC
+      dockerfile: Dockerfile
+    ports:
+      - "5004:80"
