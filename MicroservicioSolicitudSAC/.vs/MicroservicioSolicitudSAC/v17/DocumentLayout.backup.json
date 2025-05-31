@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioSolicitudSAC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioSolicitudSAC\\Infrastructure\\Migrations\\20250530013527_primermigracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Infrastructure\\Migrations\\20250530013527_primermigracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1BA7BF4D-F4B0-4198-8085-181AB395DCF0}|MicroservicioSolicitudSAC\\MicroservicioSolicitudSAC.csproj|c:\\users\\hp\\onedrive\\documentos\\jhon\\pica\\microserviciossac\\microserviciosolicitudsac\\microserviciosolicitudsac\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1BA7BF4D-F4B0-4198-8085-181AB395DCF0}|MicroservicioSolicitudSAC\\MicroservicioSolicitudSAC.csproj|solutionrelative:microserviciosolicitudsac\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1BA7BF4D-F4B0-4198-8085-181AB395DCF0}|MicroservicioSolicitudSAC\\MicroservicioSolicitudSAC.csproj|c:\\users\\hp\\onedrive\\documentos\\jhon\\pica\\microserviciossac\\microserviciosolicitudsac\\microserviciosolicitudsac\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1BA7BF4D-F4B0-4198-8085-181AB395DCF0}|MicroservicioSolicitudSAC\\MicroservicioSolicitudSAC.csproj|solutionrelative:microserviciosolicitudsac\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F8101B2-A700-4EB3-810E-03BD41C837B7}|Infrastructure\\Infrastructure.csproj|c:\\users\\hp\\onedrive\\documentos\\jhon\\pica\\microserviciossac\\microserviciosolicitudsac\\infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F8101B2-A700-4EB3-810E-03BD41C837B7}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1BA7BF4D-F4B0-4198-8085-181AB395DCF0}|MicroservicioSolicitudSAC\\MicroservicioSolicitudSAC.csproj|c:\\users\\hp\\onedrive\\documentos\\jhon\\pica\\microserviciossac\\microserviciosolicitudsac\\microserviciosolicitudsac\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{1BA7BF4D-F4B0-4198-8085-181AB395DCF0}|MicroservicioSolicitudSAC\\MicroservicioSolicitudSAC.csproj|solutionrelative:microserviciosolicitudsac\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,27 +23,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "20250530013527_primermigracion.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioSolicitudSAC\\Infrastructure\\Migrations\\20250530013527_primermigracion.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20250530013527_primermigracion.cs",
-              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioSolicitudSAC\\Infrastructure\\Migrations\\20250530013527_primermigracion.cs",
-              "RelativeToolTip": "Infrastructure\\Migrations\\20250530013527_primermigracion.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T01:35:28.21Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioSolicitudSAC\\Infrastructure\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioSolicitudSAC\\Infrastructure\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "Infrastructure\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAFYAAAAAAAAAAAAAAFsAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T01:17:22.323Z",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioSolicitudSAC\\MicroservicioSolicitudSAC\\appsettings.json",
+              "RelativeDocumentMoniker": "MicroservicioSolicitudSAC\\appsettings.json",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioSolicitudSAC\\MicroservicioSolicitudSAC\\appsettings.json",
+              "RelativeToolTip": "MicroservicioSolicitudSAC\\appsettings.json",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-30T11:21:40.63Z",
               "EditorCaption": ""
             },
             {
@@ -62,22 +41,9 @@
               "RelativeDocumentMoniker": "MicroservicioSolicitudSAC\\Program.cs",
               "ToolTip": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioSolicitudSAC\\MicroservicioSolicitudSAC\\Program.cs",
               "RelativeToolTip": "MicroservicioSolicitudSAC\\Program.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAYwFUAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T14:44:41.283Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Dockerfile",
-              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioSolicitudSAC\\MicroservicioSolicitudSAC\\Dockerfile",
-              "RelativeDocumentMoniker": "MicroservicioSolicitudSAC\\Dockerfile",
-              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioSolicitudSAC\\MicroservicioSolicitudSAC\\Dockerfile",
-              "RelativeToolTip": "MicroservicioSolicitudSAC\\Dockerfile",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAmwB0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-05-29T14:35:20.782Z",
+              "WhenOpened": "2025-05-30T11:09:11.899Z",
               "EditorCaption": ""
             }
           ]

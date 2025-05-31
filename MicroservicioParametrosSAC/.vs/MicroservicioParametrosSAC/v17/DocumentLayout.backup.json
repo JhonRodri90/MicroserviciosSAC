@@ -3,24 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioParametrosSAC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BF6DC655-7156-4A3C-8E3F-E9C5F5C6C0D4}|Infrastructure\\Infrastructure.csproj|c:\\users\\hp\\onedrive\\documentos\\jhon\\pica\\microserviciossac\\microservicioparametrossac\\infrastructure\\infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{BF6DC655-7156-4A3C-8E3F-E9C5F5C6C0D4}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{855C3971-2BF6-4F40-911D-762FE2EF438B}|MicroservicioParametrosSAC\\MicroservicioParametrosSAC.csproj|c:\\users\\hp\\onedrive\\documentos\\jhon\\pica\\microserviciossac\\microservicioparametrossac\\microservicioparametrossac\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{855C3971-2BF6-4F40-911D-762FE2EF438B}|MicroservicioParametrosSAC\\MicroservicioParametrosSAC.csproj|solutionrelative:microservicioparametrossac\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{855C3971-2BF6-4F40-911D-762FE2EF438B}|MicroservicioParametrosSAC\\MicroservicioParametrosSAC.csproj|c:\\users\\hp\\onedrive\\documentos\\jhon\\pica\\microserviciossac\\microservicioparametrossac\\microservicioparametrossac\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{855C3971-2BF6-4F40-911D-762FE2EF438B}|MicroservicioParametrosSAC\\MicroservicioParametrosSAC.csproj|solutionrelative:microservicioparametrossac\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{855C3971-2BF6-4F40-911D-762FE2EF438B}|MicroservicioParametrosSAC\\MicroservicioParametrosSAC.csproj|c:\\users\\hp\\onedrive\\documentos\\jhon\\pica\\microserviciossac\\microservicioparametrossac\\microservicioparametrossac\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{855C3971-2BF6-4F40-911D-762FE2EF438B}|MicroservicioParametrosSAC\\MicroservicioParametrosSAC.csproj|solutionrelative:microservicioparametrossac\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{855C3971-2BF6-4F40-911D-762FE2EF438B}|MicroservicioParametrosSAC\\MicroservicioParametrosSAC.csproj|c:\\users\\hp\\onedrive\\documentos\\jhon\\pica\\microserviciossac\\microservicioparametrossac\\microservicioparametrossac\\profiles\\mappingprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{855C3971-2BF6-4F40-911D-762FE2EF438B}|MicroservicioParametrosSAC\\MicroservicioParametrosSAC.csproj|solutionrelative:microservicioparametrossac\\profiles\\mappingprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BF6DC655-7156-4A3C-8E3F-E9C5F5C6C0D4}|Infrastructure\\Infrastructure.csproj|c:\\users\\hp\\onedrive\\documentos\\jhon\\pica\\microserviciossac\\microservicioparametrossac\\infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BF6DC655-7156-4A3C-8E3F-E9C5F5C6C0D4}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{855C3971-2BF6-4F40-911D-762FE2EF438B}|MicroservicioParametrosSAC\\MicroservicioParametrosSAC.csproj|c:\\users\\hp\\onedrive\\documentos\\jhon\\pica\\microserviciossac\\microservicioparametrossac\\microservicioparametrossac\\profiles\\mappingprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{855C3971-2BF6-4F40-911D-762FE2EF438B}|MicroservicioParametrosSAC\\MicroservicioParametrosSAC.csproj|solutionrelative:microservicioparametrossac\\profiles\\mappingprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,37 +31,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Infrastructure.csproj",
-              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioParametrosSAC\\Infrastructure\\Infrastructure.csproj",
-              "RelativeDocumentMoniker": "Infrastructure\\Infrastructure.csproj",
-              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioParametrosSAC\\Infrastructure\\Infrastructure.csproj",
-              "RelativeToolTip": "Infrastructure\\Infrastructure.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-29T21:28:01.053Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioParametrosSAC\\MicroservicioParametrosSAC\\appsettings.json",
               "RelativeDocumentMoniker": "MicroservicioParametrosSAC\\appsettings.json",
               "ToolTip": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioParametrosSAC\\MicroservicioParametrosSAC\\appsettings.json",
               "RelativeToolTip": "MicroservicioParametrosSAC\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-29T21:13:47.605Z"
+              "WhenOpened": "2025-05-29T21:13:47.605Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "MappingProfiles.cs",
               "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioParametrosSAC\\MicroservicioParametrosSAC\\Profiles\\MappingProfiles.cs",
               "RelativeDocumentMoniker": "MicroservicioParametrosSAC\\Profiles\\MappingProfiles.cs",
               "ToolTip": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioParametrosSAC\\MicroservicioParametrosSAC\\Profiles\\MappingProfiles.cs",
               "RelativeToolTip": "MicroservicioParametrosSAC\\Profiles\\MappingProfiles.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAiwBkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-29T21:07:23.47Z"
             },
@@ -77,7 +61,7 @@
               "RelativeDocumentMoniker": "Infrastructure\\Data\\ApplicationDbContext.cs",
               "ToolTip": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioParametrosSAC\\Infrastructure\\Data\\ApplicationDbContext.cs",
               "RelativeToolTip": "Infrastructure\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-29T20:56:26.436Z"
             },
@@ -89,9 +73,10 @@
               "RelativeDocumentMoniker": "MicroservicioParametrosSAC\\Program.cs",
               "ToolTip": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioParametrosSAC\\MicroservicioParametrosSAC\\Program.cs",
               "RelativeToolTip": "MicroservicioParametrosSAC\\Program.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAqwFYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAqwFYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T00:59:28.076Z"
+              "WhenOpened": "2025-05-29T00:59:28.076Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -1,32 +1,65 @@
 services:
+  mysql:
+    container_name: mysql8_2
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: msParametrosSAC
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: admin123
+    ports:
+      - "3306:3306"
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - mysql_data:/var/lib/mysql
+
   microservicio-parametros:
     container_name: MicroservicioParametrosSAC
     build:
-      context: ./MicroservicioParametrosSAC/MicroservicioParametrosSAC
+      context: ./MicroservicioParametrosSAC
       dockerfile: Dockerfile
     ports:
       - "5001:80"
+    depends_on:
+      mysql:
+        condition: service_healthy
 
   microservicio-solicitud:
     container_name: MicroservicioSolicitudSAC
     build:
-      context: ./MicroservicioSolicitudSAC/MicroservicioSolicitudSAC
+      context: ./MicroservicioSolicitudSAC
       dockerfile: Dockerfile
     ports:
       - "5002:80"
-     
+    depends_on:
+      mysql:
+        condition: service_healthy
+
   microservicio-usuarios:
     container_name: MicroservicioUsuariosSAC
     build:
-      context: ./MicroservicioUsuariosSAC/MicroservicioUsuariosSAC
+      context: ./MicroservicioUsuariosSAC
       dockerfile: Dockerfile
     ports:
       - "5003:80"
-      
+    depends_on:
+      mysql:
+        condition: service_healthy
+
   microservicio-historial:
     container_name: MicroservicioHistorialSolicitudesSAC
     build:
-      context: ./MicroservicioHistorialSolicitudesSAC/MicroservicioHistorialSolicitudesSAC
+      context: ./MicroservicioHistorialSolicitudesSAC
       dockerfile: Dockerfile
     ports:
       - "5004:80"
+    depends_on:
+      mysql:
+        condition: service_healthy
+
+volumes:
+  mysql_data:
