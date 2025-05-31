@@ -1,5 +1,11 @@
+using Amazon;
+using Amazon.S3;
 using AutoMapper;
+using Core.Contracts;
+using Core.Interfaces;
 using Infrastructure.Data;
+using Infrastructure.Services;
+using Infrastructure.UnitOfWork;
 using MicroservicioSolicitudSAC.Profiles;
 using Microsoft.EntityFrameworkCore;
 
@@ -8,7 +14,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Logging.AddConsole(); 
+builder.Logging.AddConsole();
 
 builder.WebHost.ConfigureKestrel(options =>
 {
@@ -49,21 +55,19 @@ var mapperConfig = new MapperConfiguration(mc =>
 IMapper mapper = mapperConfig.CreateMapper();
 
 builder.Services.AddSingleton(mapper);
-/*builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
-builder.Services.AddScoped<IAppConfig, AppConfig>();
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<INumeroSolicitudService, NumeroSolicitudService>();
 builder.Services.AddScoped<ISolicitudService, SolicitudService>();
 builder.Services.AddScoped<IUsuarioService, UsuarioService>();
 builder.Services.AddScoped<ICantidadSolicitudService, CantidadSolicitudService>();
 builder.Services.AddScoped<IColaboradorService, ColaboradorService>();
-builder.Services.AddScoped<ILoginService, LoginService>();
-builder.Services.AddScoped<IHistoricoSolicitudService, HistoricoSolicitudService>();*/
 
-/*builder.Services.AddSingleton<IAmazonS3>(sp => new AmazonS3Client(
-    builder.Configuration["AWSS3BUCKET:AccessKey"],
-    builder.Configuration["AWSS3BUCKET:SecretKey"],
-    RegionEndpoint.GetBySystemName(builder.Configuration["AWSS3BUCKET:Region"])
-));*/
+
+//builder.Services.AddSingleton<IAmazonS3>(sp => new AmazonS3Client(
+//    builder.Configuration["AWSS3BUCKET:AccessKey"],
+//    builder.Configuration["AWSS3BUCKET:SecretKey"],
+//    RegionEndpoint.GetBySystemName(builder.Configuration["AWSS3BUCKET:Region"])
+//));
 
 var app = builder.Build();
 

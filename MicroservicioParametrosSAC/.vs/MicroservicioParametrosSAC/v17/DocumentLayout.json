@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioParametrosSAC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{855C3971-2BF6-4F40-911D-762FE2EF438B}|MicroservicioParametrosSAC\\MicroservicioParametrosSAC.csproj|c:\\users\\hp\\onedrive\\documentos\\jhon\\pica\\microserviciossac\\microservicioparametrossac\\microservicioparametrossac\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{855C3971-2BF6-4F40-911D-762FE2EF438B}|MicroservicioParametrosSAC\\MicroservicioParametrosSAC.csproj|solutionrelative:microservicioparametrossac\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{855C3971-2BF6-4F40-911D-762FE2EF438B}|MicroservicioParametrosSAC\\MicroservicioParametrosSAC.csproj|c:\\users\\hp\\onedrive\\documentos\\jhon\\pica\\microserviciossac\\microservicioparametrossac\\microservicioparametrossac\\dtos\\tipoidentificacionresdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{855C3971-2BF6-4F40-911D-762FE2EF438B}|MicroservicioParametrosSAC\\MicroservicioParametrosSAC.csproj|solutionrelative:microservicioparametrossac\\dtos\\tipoidentificacionresdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{855C3971-2BF6-4F40-911D-762FE2EF438B}|MicroservicioParametrosSAC\\MicroservicioParametrosSAC.csproj|c:\\users\\hp\\onedrive\\documentos\\jhon\\pica\\microserviciossac\\microservicioparametrossac\\microservicioparametrossac\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{855C3971-2BF6-4F40-911D-762FE2EF438B}|MicroservicioParametrosSAC\\MicroservicioParametrosSAC.csproj|solutionrelative:microservicioparametrossac\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{855C3971-2BF6-4F40-911D-762FE2EF438B}|MicroservicioParametrosSAC\\MicroservicioParametrosSAC.csproj|c:\\users\\hp\\onedrive\\documentos\\jhon\\pica\\microserviciossac\\microservicioparametrossac\\microservicioparametrossac\\profiles\\mappingprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{855C3971-2BF6-4F40-911D-762FE2EF438B}|MicroservicioParametrosSAC\\MicroservicioParametrosSAC.csproj|solutionrelative:microservicioparametrossac\\profiles\\mappingprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF6DC655-7156-4A3C-8E3F-E9C5F5C6C0D4}|Infrastructure\\Infrastructure.csproj|c:\\users\\hp\\onedrive\\documentos\\jhon\\pica\\microserviciossac\\microservicioparametrossac\\infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF6DC655-7156-4A3C-8E3F-E9C5F5C6C0D4}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,39 +23,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioParametrosSAC\\MicroservicioParametrosSAC\\appsettings.json",
-              "RelativeDocumentMoniker": "MicroservicioParametrosSAC\\appsettings.json",
-              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioParametrosSAC\\MicroservicioParametrosSAC\\appsettings.json",
-              "RelativeToolTip": "MicroservicioParametrosSAC\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-29T21:13:47.605Z",
+              "Title": "TipoIdentificacionResDto.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioParametrosSAC\\MicroservicioParametrosSAC\\Dtos\\TipoIdentificacionResDto.cs",
+              "RelativeDocumentMoniker": "MicroservicioParametrosSAC\\Dtos\\TipoIdentificacionResDto.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioParametrosSAC\\MicroservicioParametrosSAC\\Dtos\\TipoIdentificacionResDto.cs",
+              "RelativeToolTip": "MicroservicioParametrosSAC\\Dtos\\TipoIdentificacionResDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T03:58:51.383Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MappingProfiles.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioParametrosSAC\\MicroservicioParametrosSAC\\Profiles\\MappingProfiles.cs",
-              "RelativeDocumentMoniker": "MicroservicioParametrosSAC\\Profiles\\MappingProfiles.cs",
-              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioParametrosSAC\\MicroservicioParametrosSAC\\Profiles\\MappingProfiles.cs",
-              "RelativeToolTip": "MicroservicioParametrosSAC\\Profiles\\MappingProfiles.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T21:07:23.47Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioParametrosSAC\\Infrastructure\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioParametrosSAC\\Infrastructure\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "Infrastructure\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T20:56:26.436Z"
             },
             {
               "$type": "Document",
@@ -73,9 +41,9 @@
               "RelativeDocumentMoniker": "MicroservicioParametrosSAC\\Program.cs",
               "ToolTip": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioParametrosSAC\\MicroservicioParametrosSAC\\Program.cs",
               "RelativeToolTip": "MicroservicioParametrosSAC\\Program.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAqwFYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAAAFMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T00:59:28.076Z",
+              "WhenOpened": "2025-05-31T03:30:33.459Z",
               "EditorCaption": ""
             }
           ]

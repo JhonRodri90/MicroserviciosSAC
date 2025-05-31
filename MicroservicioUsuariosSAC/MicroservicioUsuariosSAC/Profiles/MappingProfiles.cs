@@ -1,4 +1,8 @@
 ﻿using AutoMapper;
+using Core.Entities;
+using Core.Request;
+using Core.Response;
+using MicroservicioUsuariosSAC.Dtos;
 using Microsoft.AspNetCore.Identity.Data;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
@@ -9,7 +13,7 @@ public class MappingProfiles : Profile
     public MappingProfiles()
     {
         
-        /*CreateMap<Usuarios, UsuarioResponse>().ForMember(dest => dest.us_id, opt => opt.MapFrom(src => src.us_id))
+        CreateMap<Usuarios, UsuarioResponse>().ForMember(dest => dest.us_id, opt => opt.MapFrom(src => src.us_id))
             .ForMember(dest => dest.us_apellido, opt => opt.MapFrom(src => src.us_apellido))
             .ForMember(dest => dest.us_correo, opt => opt.MapFrom(src => src.us_correo))
             .ForMember(dest => dest.us_identificacion, opt => opt.MapFrom(src => src.us_identificacion))
@@ -86,7 +90,5 @@ public class MappingProfiles : Profile
             .ForMember(dest => dest.col_activo, opt => opt.MapFrom(src => src.col_activo))
             .ForMember(dest => dest.col_col_id_lider, opt => opt.MapFrom(src => src.col_col_id_lider));
 
-        CreateMap<LoginRequest, LoginReqDto>()
-            .ReverseMap();*/
     }
 }

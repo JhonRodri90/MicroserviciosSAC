@@ -200,6 +200,9 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+              "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioUsuariosSAC\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioUsuariosSAC\\Core\\Core.csproj"
+              },
               "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioUsuariosSAC\\Infrastructure\\Infrastructure.csproj": {
                 "projectPath": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioUsuariosSAC\\Infrastructure\\Infrastructure.csproj"
               }

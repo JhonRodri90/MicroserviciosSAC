@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
 using Core.Entities;
-using Microsoft.AspNetCore.Identity.Data;
+using Core.Request;
+using Core.Response;
+using MicroservicioSolicitudSAC.Dtos;
 
 namespace MicroservicioSolicitudSAC.Profiles;
 
@@ -8,7 +10,7 @@ public class MappingProfiles : Profile
 {
     public MappingProfiles()
     {
-        /*CreateMap<NumeroSolicitudRequest, NumeroSolicitudReqDto>()
+        CreateMap<NumeroSolicitudRequest, NumeroSolicitudReqDto>()
             .ReverseMap();
 
         CreateMap<NumeroSolicitudResponse, NumeroSolicitudResDto>()
@@ -183,7 +185,7 @@ public class MappingProfiles : Profile
             .ForMember(dest => dest.col_tc_id, opt => opt.MapFrom(src => src.col_tc_id))
             .ForMember(dest => dest.col_tu_id, opt => opt.MapFrom(src => src.col_tu_id))
             .ForMember(dest => dest.col_activo, opt => opt.MapFrom(src => src.col_activo))
-            .ForMember(dest => dest.col_col_id_lider, opt => opt.MapFrom(src => src.col_col_id_lider));*/
+            .ForMember(dest => dest.col_col_id_lider, opt => opt.MapFrom(src => src.col_col_id_lider));
 
    
     }

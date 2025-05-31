@@ -1,5 +1,7 @@
 using AutoMapper;
+using Core.Interfaces;
 using Infrastructure.Data;
+using Infrastructure.UnitOfWork;
 using MicroservicioParametrosSAC.Profiles;
 using Microsoft.EntityFrameworkCore;
 
@@ -48,7 +50,7 @@ var mapperConfig = new MapperConfiguration(mc =>
 IMapper mapper = mapperConfig.CreateMapper();
 
 builder.Services.AddSingleton(mapper);
-//builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 //builder.Services.AddScoped<IAppConfig, AppConfig>();
 
 
