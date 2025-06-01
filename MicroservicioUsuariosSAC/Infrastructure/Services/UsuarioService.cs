@@ -5,6 +5,7 @@ using Core.Interfaces;
 using Core.Request;
 using Core.Response;
 using Infrastructure.UnitOfWork;
+using MassTransit;
 
 namespace Infrastructure.Services;
 
@@ -21,21 +22,32 @@ public class UsuarioService : IUsuarioService
 
     public async Task<UsuarioResponse> Add(UsuarioRequest request, CancellationToken cancellationToken)
     {
-        Usuarios entity = _mapper.Map<Usuarios>(request);
-
-        await _unitOfWork.UsuarioRepository.Create(entity, cancellationToken);
-        int result = await _unitOfWork.SaveChangesAsync(cancellationToken);
-
-        if (result > 0)
+        try
         {
-            var entityResponse = _mapper.Map<UsuarioResponse>(entity);
-            return entityResponse;
+            Usuarios entity = _mapper.Map<Usuarios>(request);
+
+            await _unitOfWork.UsuarioRepository.Create(entity, cancellationToken);
+            int result = await _unitOfWork.SaveChangesAsync(cancellationToken);
+
+            if (result > 0)
+            {
+                var entityResponse = _mapper.Map<UsuarioResponse>(entity);
+                Console.WriteLine($"Usuario agregado con ID: {entity.us_id}");
+                return entityResponse;
+            }
+            else
+            {
+                Console.WriteLine("No se pudo agregar el usuario.");
+                return null;
+            }
         }
-        else
+        catch (Exception ex)
         {
+            Console.WriteLine($"Error al agregar el usuario: {ex.Message}");
             return null;
         }
-    }
+
+     }
 
     public async Task<bool> Delete(int id, CancellationToken cancellationToken)
     {

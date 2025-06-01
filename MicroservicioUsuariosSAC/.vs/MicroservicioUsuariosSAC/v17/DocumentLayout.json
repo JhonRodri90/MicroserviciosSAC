@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioUsuariosSAC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FCFAA9E2-07EF-4D51-9343-09B759808D64}|Infrastructure\\Infrastructure.csproj|c:\\users\\hp\\onedrive\\documentos\\jhon\\pica\\microserviciossac\\microserviciousuariossac\\infrastructure\\services\\colaboradorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCFAA9E2-07EF-4D51-9343-09B759808D64}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\services\\colaboradorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F9490A6-BCE1-42B5-B093-266DB24C0A34}|Core\\Core.csproj|c:\\users\\hp\\onedrive\\documentos\\jhon\\pica\\microserviciossac\\microserviciousuariossac\\core\\contracts\\icolaboradorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F9490A6-BCE1-42B5-B093-266DB24C0A34}|Core\\Core.csproj|solutionrelative:core\\contracts\\icolaboradorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FCFAA9E2-07EF-4D51-9343-09B759808D64}|Infrastructure\\Infrastructure.csproj|c:\\users\\hp\\onedrive\\documentos\\jhon\\pica\\microserviciossac\\microserviciousuariossac\\infrastructure\\consumers\\crearusuarioconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCFAA9E2-07EF-4D51-9343-09B759808D64}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\consumers\\crearusuarioconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6C43ECF0-F998-47B4-9552-B5CD1728854E}|MicroservicioUsuariosSAC\\MicroservicioUsuariosSAC.csproj|c:\\users\\hp\\onedrive\\documentos\\jhon\\pica\\microserviciossac\\microserviciousuariossac\\microserviciousuariossac\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6C43ECF0-F998-47B4-9552-B5CD1728854E}|MicroservicioUsuariosSAC\\MicroservicioUsuariosSAC.csproj|solutionrelative:microserviciousuariossac\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C43ECF0-F998-47B4-9552-B5CD1728854E}|MicroservicioUsuariosSAC\\MicroservicioUsuariosSAC.csproj|c:\\users\\hp\\onedrive\\documentos\\jhon\\pica\\microserviciossac\\microserviciousuariossac\\microserviciousuariossac\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C43ECF0-F998-47B4-9552-B5CD1728854E}|MicroservicioUsuariosSAC\\MicroservicioUsuariosSAC.csproj|solutionrelative:microserviciousuariossac\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCFAA9E2-07EF-4D51-9343-09B759808D64}|Infrastructure\\Infrastructure.csproj|c:\\users\\hp\\onedrive\\documentos\\jhon\\pica\\microserviciossac\\microserviciousuariossac\\infrastructure\\services\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCFAA9E2-07EF-4D51-9343-09B759808D64}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\services\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +26,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ColaboradorService.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioUsuariosSAC\\Infrastructure\\Services\\ColaboradorService.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Services\\ColaboradorService.cs",
-              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioUsuariosSAC\\Infrastructure\\Services\\ColaboradorService.cs",
-              "RelativeToolTip": "Infrastructure\\Services\\ColaboradorService.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAA2wEMAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "UsuariosController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioUsuariosSAC\\MicroservicioUsuariosSAC\\Controllers\\UsuariosController.cs",
+              "RelativeDocumentMoniker": "MicroservicioUsuariosSAC\\Controllers\\UsuariosController.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioUsuariosSAC\\MicroservicioUsuariosSAC\\Controllers\\UsuariosController.cs",
+              "RelativeToolTip": "MicroservicioUsuariosSAC\\Controllers\\UsuariosController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACQAAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-31T05:38:43.008Z",
+              "WhenOpened": "2025-06-01T04:18:15.475Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CrearUsuarioConsumer.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioUsuariosSAC\\Infrastructure\\Consumers\\CrearUsuarioConsumer.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Consumers\\CrearUsuarioConsumer.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioUsuariosSAC\\Infrastructure\\Consumers\\CrearUsuarioConsumer.cs",
+              "RelativeToolTip": "Infrastructure\\Consumers\\CrearUsuarioConsumer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T04:16:11.397Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "IColaboradorService.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioUsuariosSAC\\Core\\Contracts\\IColaboradorService.cs",
-              "RelativeDocumentMoniker": "Core\\Contracts\\IColaboradorService.cs",
-              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioUsuariosSAC\\Core\\Contracts\\IColaboradorService.cs",
-              "RelativeToolTip": "Core\\Contracts\\IColaboradorService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-31T05:37:11.797Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioUsuariosSAC\\MicroservicioUsuariosSAC\\Program.cs",
               "RelativeDocumentMoniker": "MicroservicioUsuariosSAC\\Program.cs",
               "ToolTip": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioUsuariosSAC\\MicroservicioUsuariosSAC\\Program.cs",
               "RelativeToolTip": "MicroservicioUsuariosSAC\\Program.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAAADAAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-31T05:33:01.144Z",
+              "WhenOpened": "2025-06-01T04:08:46.941Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UsuarioService.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioUsuariosSAC\\Infrastructure\\Services\\UsuarioService.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Services\\UsuarioService.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioUsuariosSAC\\Infrastructure\\Services\\UsuarioService.cs",
+              "RelativeToolTip": "Infrastructure\\Services\\UsuarioService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T04:06:51.281Z",
               "EditorCaption": ""
             }
           ]

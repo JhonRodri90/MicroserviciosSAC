@@ -6,7 +6,7 @@ using Core.Entities;
 using Core.Interfaces;
 using Core.Request;
 using Core.Response;
-using Microsoft.AspNetCore.Http;
+using MassTransit;
 using Microsoft.Extensions.Configuration;
 
 namespace Infrastructure.Services;
@@ -19,6 +19,7 @@ public class SolicitudService : ISolicitudService
     private readonly IUsuarioService _usuarioService;
     private readonly ICantidadSolicitudService _cantidadSolicitudService;
     private readonly IColaboradorService _colaboradorService;
+    private readonly IPublishEndpoint _publishEndpoint;
     string relationsUsers = "Estados_Solicitudes,Tipos_Solicitudes,SolicitudApelacion,Usuarios,Usuarios.Tipo_Identificacion,Usuarios.Tipos_Usuarios,Colaboradores";
     //private readonly IAmazonS3 _s3Client;
     //private readonly string _bucketName;
@@ -27,7 +28,7 @@ public class SolicitudService : ISolicitudService
 
     public SolicitudService(IUnitOfWork unitOfWork, IMapper mapper, INumeroSolicitudService numeroSolicitudService, 
                                 IUsuarioService usuarioService, IConfiguration configuration, ICantidadSolicitudService cantidadSolicitudService,
-                                IColaboradorService colaboradorService)
+                                IColaboradorService colaboradorService, IPublishEndpoint publishEndpoint)
     {
         _unitOfWork = unitOfWork;
         _mapper = mapper;
@@ -38,7 +39,10 @@ public class SolicitudService : ISolicitudService
         //_bucketRegion = configuration["AWSS3BUCKET:Region"];
         _cantidadSolicitudService = cantidadSolicitudService;
         _colaboradorService = colaboradorService;
+        _publishEndpoint = publishEndpoint;
     }
+
+    
 
     public async Task<SolicitudResponse> Add(SolicitudRequest request, CancellationToken cancellationToken)
     {
@@ -56,7 +60,8 @@ public class SolicitudService : ISolicitudService
             UsuarioRequest User = _mapper.Map<UsuarioRequest>(request.Usuario);
             var newUser = await _usuarioService.Add(User, cancellationToken);
 
-
+            await _publishEndpoint.Publish(User);
+            Console.WriteLine($"Usuario creado Y encolado: {newUser.us_id} - {newUser.us_correo}");
             if (newUser is not null)
             {
                 entity.so_us_id = newUser.us_id;
@@ -65,6 +70,7 @@ public class SolicitudService : ISolicitudService
             {
                 return null;
             }
+
         }
 
         var numeroSolicitud = await _numeroSolicitudService.Add(cancellationToken);

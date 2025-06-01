@@ -1,0 +1,12 @@
+C:\Users\HP\OneDrive\Documentos\JHON\PICA\MicroserviciosSAC\MessagingContracts\bin\Debug\net8.0\MessagingContracts.deps.json
+C:\Users\HP\OneDrive\Documentos\JHON\PICA\MicroserviciosSAC\MessagingContracts\bin\Debug\net8.0\MessagingContracts.dll
+C:\Users\HP\OneDrive\Documentos\JHON\PICA\MicroserviciosSAC\MessagingContracts\bin\Debug\net8.0\MessagingContracts.pdb
+C:\Users\HP\OneDrive\Documentos\JHON\PICA\MicroserviciosSAC\MessagingContracts\obj\Debug\net8.0\MessagingContracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\OneDrive\Documentos\JHON\PICA\MicroserviciosSAC\MessagingContracts\obj\Debug\net8.0\MessagingContracts.AssemblyInfoInputs.cache
+C:\Users\HP\OneDrive\Documentos\JHON\PICA\MicroserviciosSAC\MessagingContracts\obj\Debug\net8.0\MessagingContracts.AssemblyInfo.cs
+C:\Users\HP\OneDrive\Documentos\JHON\PICA\MicroserviciosSAC\MessagingContracts\obj\Debug\net8.0\MessagingContracts.csproj.CoreCompileInputs.cache
+C:\Users\HP\OneDrive\Documentos\JHON\PICA\MicroserviciosSAC\MessagingContracts\obj\Debug\net8.0\MessagingContracts.sourcelink.json
+C:\Users\HP\OneDrive\Documentos\JHON\PICA\MicroserviciosSAC\MessagingContracts\obj\Debug\net8.0\MessagingContracts.dll
+C:\Users\HP\OneDrive\Documentos\JHON\PICA\MicroserviciosSAC\MessagingContracts\obj\Debug\net8.0\refint\MessagingContracts.dll
+C:\Users\HP\OneDrive\Documentos\JHON\PICA\MicroserviciosSAC\MessagingContracts\obj\Debug\net8.0\MessagingContracts.pdb
+C:\Users\HP\OneDrive\Documentos\JHON\PICA\MicroserviciosSAC\MessagingContracts\obj\Debug\net8.0\ref\MessagingContracts.dll

@@ -17,6 +17,18 @@ services:
     volumes:
       - mysql_data:/var/lib/mysql
 
+  rabbitmq:
+    container_name: rabbitmq
+    image: rabbitmq:3-management
+    ports:
+      - "5672:5672"     # AMQP port para la comunicación de los microservicios
+      - "15672:15672"   # Consola de gestión web
+    healthcheck:
+      test: ["CMD", "rabbitmqctl", "status"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
   microservicio-parametros:
     container_name: MicroservicioParametrosSAC
     build:
@@ -26,6 +38,8 @@ services:
       - "5001:80"
     depends_on:
       mysql:
+        condition: service_healthy
+      rabbitmq:
         condition: service_healthy
 
   microservicio-solicitud:
@@ -38,6 +52,8 @@ services:
     depends_on:
       mysql:
         condition: service_healthy
+      rabbitmq:
+        condition: service_healthy
 
   microservicio-usuarios:
     container_name: MicroservicioUsuariosSAC
@@ -49,6 +65,8 @@ services:
     depends_on:
       mysql:
         condition: service_healthy
+      rabbitmq:
+        condition: service_healthy
 
   microservicio-historial:
     container_name: MicroservicioHistorialSolicitudesSAC
@@ -59,6 +77,8 @@ services:
       - "5004:80"
     depends_on:
       mysql:
+        condition: service_healthy
+      rabbitmq:
         condition: service_healthy
 
 volumes:

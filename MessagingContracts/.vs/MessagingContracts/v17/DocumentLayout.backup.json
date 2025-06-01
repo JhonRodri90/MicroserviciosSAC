@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MessagingContracts\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{013D5B41-72F3-45B2-B770-792B4C8747D1}|MessagingContracts.csproj|c:\\users\\hp\\onedrive\\documentos\\jhon\\pica\\microserviciossac\\messagingcontracts\\usuariorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{013D5B41-72F3-45B2-B770-792B4C8747D1}|MessagingContracts.csproj|solutionrelative:usuariorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{013D5B41-72F3-45B2-B770-792B4C8747D1}|MessagingContracts.csproj|c:\\users\\hp\\onedrive\\documentos\\jhon\\pica\\microserviciossac\\messagingcontracts\\iusercreated.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{013D5B41-72F3-45B2-B770-792B4C8747D1}|MessagingContracts.csproj|solutionrelative:iusercreated.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UsuarioRequest.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MessagingContracts\\UsuarioRequest.cs",
+              "RelativeDocumentMoniker": "UsuarioRequest.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MessagingContracts\\UsuarioRequest.cs",
+              "RelativeToolTip": "UsuarioRequest.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAA1wAUAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T02:26:34.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IUserCreated.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MessagingContracts\\IUserCreated.cs",
+              "RelativeDocumentMoniker": "IUserCreated.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MessagingContracts\\IUserCreated.cs",
+              "RelativeToolTip": "IUserCreated.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T02:25:24.557Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MicroservicioSolicitudSAC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5d31f91bcfb1011f88f53ac306663dc95665cc6b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5ab9d5a750ecdea9b8e1ab34d39530cd57d880d2")]
 [assembly: System.Reflection.AssemblyProductAttribute("MicroservicioSolicitudSAC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MicroservicioSolicitudSAC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

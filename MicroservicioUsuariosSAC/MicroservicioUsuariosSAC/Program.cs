@@ -1,13 +1,33 @@
 using AutoMapper;
 using Core.Contracts;
 using Core.Interfaces;
+using Infrastructure.Consumers;
 using Infrastructure.Data;
 using Infrastructure.Services;
 using Infrastructure.UnitOfWork;
+using MassTransit;
 using MicroservicioUsuariosSAC.Profiles;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddMassTransit(x =>
+{
+    x.AddConsumer<CrearUsuarioConsumer>();
+    x.UsingRabbitMq((context, cfg) =>
+    {
+        cfg.Host("rabbitmq", "/", h =>
+        {
+            h.Username("guest");
+            h.Password("guest");
+        });
+        cfg.ReceiveEndpoint("mi-peticion-queue", e =>
+        {
+            e.ConfigureConsumer<CrearUsuarioConsumer>(context);
+        });
+    });
+});
+
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
@@ -57,7 +77,6 @@ builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IUsuarioService, UsuarioService>();
 builder.Services.AddScoped<IColaboradorService, ColaboradorService>();
 builder.Services.AddScoped<ILoginService, LoginService>();
-
 
 var app = builder.Build();
 

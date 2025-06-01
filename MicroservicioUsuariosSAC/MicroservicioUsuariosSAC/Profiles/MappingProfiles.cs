@@ -51,6 +51,42 @@ public class MappingProfiles : Profile
             .ForMember(dest => dest.us_telefono, opt => opt.MapFrom(src => src.us_telefono))
             .ForMember(dest => dest.us_ti_id, opt => opt.MapFrom(src => src.us_ti_id));
 
+        CreateMap<UsuarioResponse, UsuarioResDto>()
+            .ForMember(dest => dest.us_id, opt => opt.MapFrom(src => src.us_id))
+            .ForMember(dest => dest.us_apellido, opt => opt.MapFrom(src => src.us_apellido))
+            .ForMember(dest => dest.us_correo, opt => opt.MapFrom(src => src.us_correo))
+            .ForMember(dest => dest.us_identificacion, opt => opt.MapFrom(src => src.us_identificacion))
+            .ForMember(dest => dest.us_nombre, opt => opt.MapFrom(src => src.us_nombre))
+            .ForMember(dest => dest.us_telefono, opt => opt.MapFrom(src => src.us_telefono))
+            .ForMember(dest => dest.us_ti_id, opt => opt.MapFrom(src => src.us_ti_id));
+
+        CreateMap<UsuarioResDto, UsuarioResponse>()
+            .ForMember(dest => dest.us_id, opt => opt.MapFrom(src => src.us_id))
+            .ForMember(dest => dest.us_apellido, opt => opt.MapFrom(src => src.us_apellido))
+            .ForMember(dest => dest.us_correo, opt => opt.MapFrom(src => src.us_correo))
+            .ForMember(dest => dest.us_identificacion, opt => opt.MapFrom(src => src.us_identificacion))
+            .ForMember(dest => dest.us_nombre, opt => opt.MapFrom(src => src.us_nombre))
+            .ForMember(dest => dest.us_telefono, opt => opt.MapFrom(src => src.us_telefono))
+            .ForMember(dest => dest.us_ti_id, opt => opt.MapFrom(src => src.us_ti_id));
+
+        CreateMap<UsuarioRequest, UsuarioRequestDto>()
+            .ForMember(dest => dest.us_id, opt => opt.MapFrom(src => src.us_id))
+            .ForMember(dest => dest.us_apellido, opt => opt.MapFrom(src => src.us_apellido))
+            .ForMember(dest => dest.us_correo, opt => opt.MapFrom(src => src.us_correo))
+            .ForMember(dest => dest.us_identificacion, opt => opt.MapFrom(src => src.us_identificacion))
+            .ForMember(dest => dest.us_nombre, opt => opt.MapFrom(src => src.us_nombre))
+            .ForMember(dest => dest.us_telefono, opt => opt.MapFrom(src => src.us_telefono))
+            .ForMember(dest => dest.us_ti_id, opt => opt.MapFrom(src => src.us_ti_id));
+
+        CreateMap<UsuarioRequestDto, UsuarioRequest>()
+            .ForMember(dest => dest.us_id, opt => opt.MapFrom(src => src.us_id))
+            .ForMember(dest => dest.us_apellido, opt => opt.MapFrom(src => src.us_apellido))
+            .ForMember(dest => dest.us_correo, opt => opt.MapFrom(src => src.us_correo))
+            .ForMember(dest => dest.us_identificacion, opt => opt.MapFrom(src => src.us_identificacion))
+            .ForMember(dest => dest.us_nombre, opt => opt.MapFrom(src => src.us_nombre))
+            .ForMember(dest => dest.us_telefono, opt => opt.MapFrom(src => src.us_telefono))
+            .ForMember(dest => dest.us_ti_id, opt => opt.MapFrom(src => src.us_ti_id));
+
         CreateMap<IEnumerable<Tipo_Identificacion>, IEnumerable<TipoIdentificacionResponse>>()
             .ConvertUsing((src, dest, context) => src.Select(x => context.Mapper.Map<TipoIdentificacionResponse>(x)).ToList());
 

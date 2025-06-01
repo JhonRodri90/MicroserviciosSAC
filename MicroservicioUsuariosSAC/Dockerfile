@@ -4,19 +4,15 @@ WORKDIR /app
 EXPOSE 80
 EXPOSE 443
 
-# Etapa de build
+# Etapa build
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
-# Copiar los archivos de proyecto y restaurar dependencias
-COPY ["MicroservicioUsuariosSAC/MicroservicioUsuariosSAC.csproj", "MicroservicioUsuariosSAC/"]
-COPY ["Infrastructure/Infrastructure.csproj", "Infrastructure/"]
-COPY ["Core/Core.csproj", "Core/"]
+# Copiar toda la solución (todo lo que está por encima del Dockerfile)
+COPY ../../ ./
 
+# Restaurar dependencias del proyecto principal
 RUN dotnet restore "MicroservicioUsuariosSAC/MicroservicioUsuariosSAC.csproj"
-
-# Copiar el resto del código
-COPY . .
 
 # Construir el proyecto principal
 RUN dotnet build "MicroservicioUsuariosSAC/MicroservicioUsuariosSAC.csproj" -c Release -o /app/build

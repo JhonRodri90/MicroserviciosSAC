@@ -12,6 +12,7 @@ namespace MicroservicioSolicitudSAC.Controllers
     {
         private readonly ISolicitudService _service;
         private readonly IMapper _mapper;
+        
 
         public SolicitudController(ISolicitudService service, IMapper mapper)
         {
@@ -46,6 +47,7 @@ namespace MicroservicioSolicitudSAC.Controllers
             {
 
                 var solicitud = await _service.Add(numReq, cancellationToken);
+
                 return Ok(solicitud);
 
             }

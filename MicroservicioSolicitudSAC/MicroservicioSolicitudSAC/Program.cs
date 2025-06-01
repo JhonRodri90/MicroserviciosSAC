@@ -6,10 +6,24 @@ using Core.Interfaces;
 using Infrastructure.Data;
 using Infrastructure.Services;
 using Infrastructure.UnitOfWork;
+using MassTransit;
 using MicroservicioSolicitudSAC.Profiles;
 using Microsoft.EntityFrameworkCore;
+using static Infrastructure.Services.SolicitudService;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddMassTransit(x =>
+{
+    x.UsingRabbitMq((context, cfg) =>
+    {
+        cfg.Host("rabbitmq", "/", h =>
+        {
+            h.Username("guest");
+            h.Password("guest");
+        });
+    });
+});
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
@@ -61,7 +75,6 @@ builder.Services.AddScoped<ISolicitudService, SolicitudService>();
 builder.Services.AddScoped<IUsuarioService, UsuarioService>();
 builder.Services.AddScoped<ICantidadSolicitudService, CantidadSolicitudService>();
 builder.Services.AddScoped<IColaboradorService, ColaboradorService>();
-
 
 //builder.Services.AddSingleton<IAmazonS3>(sp => new AmazonS3Client(
 //    builder.Configuration["AWSS3BUCKET:AccessKey"],
