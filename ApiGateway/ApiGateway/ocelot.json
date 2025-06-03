@@ -1,0 +1,25 @@
+{
+    "Routes": [
+        {
+            "DownstreamPathTemplate": "/api/solicitud",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "microservicio-solicitud",
+                    "Port": 80
+                }
+            ],
+            "UpstreamPathTemplate": "/solicitud",
+            "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
+        }
+    ],
+    "GlobalConfiguration": {
+        "BaseUrl": "http://localhost:5005",
+        "RequestIdKey": "OcRequestId",
+        "LoggingOptions": {
+            "IncludeScopes": true,
+            "IncludeMessage": true,
+            "LogLevel": "Debug"
+        }
+    }
+}

@@ -81,5 +81,22 @@ services:
       rabbitmq:
         condition: service_healthy
 
+  apigateway:
+    container_name: ApiGatewaySAC
+    build:
+      context: ./ApiGateway
+      dockerfile: Dockerfile
+    ports:
+      - "5005:80"
+    depends_on:
+      - microservicio-parametros
+      - microservicio-solicitud
+      - microservicio-usuarios
+      - microservicio-historial
+    networks:
+      - default
+
 volumes:
   mysql_data:
+  
+  

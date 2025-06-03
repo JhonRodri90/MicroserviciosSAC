@@ -1,0 +1,98 @@
+## Archivos de compilación
+bin/
+obj/
+
+## Carpetas y archivos temporales y de caché
+[Ll]og/
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*.cache
+
+## Visual Studio
+.vs/
+*.user
+*.suo
+*.csproj.user
+*.DotSettings.user
+
+## Archivos y carpetas específicas en .vs y obj
+.vs/**/*.vscode
+.vs/**/*.suo
+.vs/**/*.cache
+.vs/**/*.v17
+.vs/**/*.futdcache.v2
+
+obj/**/ContainerDevelopmentMode.cache
+obj/**/ContainerId.cache
+obj/**/ContainerName.cache
+obj/**/ContainerRunContext.cache
+obj/**/ImageBuildContext.cache
+obj/**/ImageId.cache
+obj/**/LaunchedImageId.cache
+obj/**/VolumeMappings.cache
+obj/**/VolumeMappings2.cache
+
+## Archivos de sistema
+*.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+## Configuraciones locales
+appsettings.Development.json
+secrets.json
+
+## Archivos de publicación
+publish/
+out/
+TestResults/
+*.coverage
+*.coveragexml
+
+## Paquetes NuGet descargados
+*.nupkg
+packages/
+*.snupkg
+
+## Archivos de lock
+project.lock.json
+project.fragment.lock.json
+
+## IDEs adicionales
+.idea/
+*.code-workspace
+
+## Rider
+.idea/
+*.sln.iml
+
+## Archivos y carpetas de caché y temp específicos de .NET
+*.dotCover
+*.ncrunch*
+*.ReSharper*
+_ReSharper*/
+.vscode/
+*.vspscc
+*.vssscc
+
+## Carpetas de configuración local de Visual Studio
+.vscode/
+
+## Archivos de contenedores y Docker
+Dockerfile*
+docker-compose*.yml
+
+## Archivos de base de datos local y temporales
+*.mdf
+*.ldf
+*.sqlite
+
+## Archivos de caché del contenedor Visual Studio
+.vsconfig
+
+## Archivos de configuración de entorno local
+.env
+.env.local
