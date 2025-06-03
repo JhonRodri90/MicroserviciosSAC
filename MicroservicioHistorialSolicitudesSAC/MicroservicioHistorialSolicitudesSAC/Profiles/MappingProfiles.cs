@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
 using Core.Entities;
-using Microsoft.AspNetCore.Identity.Data;
+using Core.Request;
+using Core.Response;
+using MicroservicioHistorialSolicitudesSAC.Dtos;
 
 namespace MicroservicioHistorialSolicitudesSAC.Profiles;
 
@@ -9,7 +11,7 @@ public class MappingProfiles : Profile
     public MappingProfiles()
     {
 
-        /*CreateMap<SolicitudRequest, SolicitudReqDto>()
+        CreateMap<SolicitudRequest, SolicitudReqDto>()
             .ReverseMap();
 
         CreateMap<SolicitudResponse, SolicitudResDto>()
@@ -42,6 +44,24 @@ public class MappingProfiles : Profile
             .ForMember(dest => dest.Estados_Solicitudes, opt => opt.MapFrom(src => src.Estados_Solicitudes))
             .ForMember(dest => dest.Colaboradores, opt => opt.MapFrom(src => src.Colaboradores))
             .ForMember(dest => dest.SolicitudApelacion, opt => opt.MapFrom(src => src.SolicitudApelacion));
+
+        CreateMap<Solicitudes, SolicitudEncoladoResponse>()
+            .ForMember(dest => dest.so_id, opt => opt.MapFrom(src => src.so_id))
+            .ForMember(dest => dest.so_numero_solicitud, opt => opt.MapFrom(src => src.so_numero_solicitud))
+            .ForMember(dest => dest.so_ts_id, opt => opt.MapFrom(src => src.so_ts_id))
+            .ForMember(dest => dest.so_fecha_creacion, opt => opt.MapFrom(src => src.so_fecha_creacion))
+            .ForMember(dest => dest.so_es_id, opt => opt.MapFrom(src => src.so_es_id))
+            .ForMember(dest => dest.so_us_id, opt => opt.MapFrom(src => src.so_us_id))
+            .ForMember(dest => dest.so_url_image, opt => opt.MapFrom(src => src.so_url_image));
+
+        CreateMap<SolicitudEncoladoResponse, Solicitudes>()
+            .ForMember(dest => dest.so_id, opt => opt.MapFrom(src => src.so_id))
+            .ForMember(dest => dest.so_numero_solicitud, opt => opt.MapFrom(src => src.so_numero_solicitud))
+            .ForMember(dest => dest.so_ts_id, opt => opt.MapFrom(src => src.so_ts_id))
+            .ForMember(dest => dest.so_fecha_creacion, opt => opt.MapFrom(src => src.so_fecha_creacion))
+            .ForMember(dest => dest.so_es_id, opt => opt.MapFrom(src => src.so_es_id))
+            .ForMember(dest => dest.so_us_id, opt => opt.MapFrom(src => src.so_us_id))
+            .ForMember(dest => dest.so_url_image, opt => opt.MapFrom(src => src.so_url_image));
 
         CreateMap<IEnumerable<Solicitudes>, IEnumerable<SolicitudResponse>>()
             .ConvertUsing((src, dest, context) => src.Select(x => context.Mapper.Map<SolicitudResponse>(x)).ToList());
@@ -112,32 +132,6 @@ public class MappingProfiles : Profile
         CreateMap<TipoIdentificacionResponse, TipoIdentificacionResDto>()
             .ReverseMap();
 
-        CreateMap<Cantidad_Solicitudes, CantidadSolicitudResponse>()
-            .ForMember(dest => dest.cs_id, opt => opt.MapFrom(src => src.cs_id))
-            .ForMember(dest => dest.cs_col_id, opt => opt.MapFrom(src => src.cs_col_id))
-            .ForMember(dest => dest.cs_ts_id, opt => opt.MapFrom(src => src.cs_ts_id))
-            .ForMember(dest => dest.cs_es_id, opt => opt.MapFrom(src => src.cs_es_id))
-            .ForMember(dest => dest.cs_cantidad, opt => opt.MapFrom(src => src.cs_cantidad));
-
-        CreateMap<CantidadSolicitudResponse, Cantidad_Solicitudes>()
-           .ForMember(dest => dest.cs_id, opt => opt.MapFrom(src => src.cs_id))
-           .ForMember(dest => dest.cs_col_id, opt => opt.MapFrom(src => src.cs_col_id))
-           .ForMember(dest => dest.cs_ts_id, opt => opt.MapFrom(src => src.cs_ts_id))
-           .ForMember(dest => dest.cs_es_id, opt => opt.MapFrom(src => src.cs_es_id))
-           .ForMember(dest => dest.cs_cantidad, opt => opt.MapFrom(src => src.cs_cantidad));
-
-        CreateMap<Cantidad_Solicitudes, CantidadSolicitudRequest>()
-            .ForMember(dest => dest.cs_col_id, opt => opt.MapFrom(src => src.cs_col_id))
-            .ForMember(dest => dest.cs_ts_id, opt => opt.MapFrom(src => src.cs_ts_id))
-            .ForMember(dest => dest.cs_es_id, opt => opt.MapFrom(src => src.cs_es_id))
-            .ForMember(dest => dest.cs_cantidad, opt => opt.MapFrom(src => src.cs_cantidad));
-
-        CreateMap<CantidadSolicitudRequest, Cantidad_Solicitudes>()
-           .ForMember(dest => dest.cs_col_id, opt => opt.MapFrom(src => src.cs_col_id))
-           .ForMember(dest => dest.cs_ts_id, opt => opt.MapFrom(src => src.cs_ts_id))
-           .ForMember(dest => dest.cs_es_id, opt => opt.MapFrom(src => src.cs_es_id))
-           .ForMember(dest => dest.cs_cantidad, opt => opt.MapFrom(src => src.cs_cantidad));
-
         CreateMap<Colaboradores, ColaboradorResponse>()
             .ForMember(dest => dest.col_id, opt => opt.MapFrom(src => src.col_id))
             .ForMember(dest => dest.col_nombre, opt => opt.MapFrom(src => src.col_nombre))
@@ -192,7 +186,7 @@ public class MappingProfiles : Profile
             .ForMember(dest => dest.hs_fecha, opt => opt.MapFrom(src => src.hs_fecha));
 
         CreateMap<IEnumerable<Historicos_Solicitudes>, IEnumerable<HistoricoSolicitudResponse>>()
-            .ConvertUsing((src, dest, context) => src.Select(x => context.Mapper.Map<HistoricoSolicitudResponse>(x)).ToList());*/
+            .ConvertUsing((src, dest, context) => src.Select(x => context.Mapper.Map<HistoricoSolicitudResponse>(x)).ToList());
 
     }
 }

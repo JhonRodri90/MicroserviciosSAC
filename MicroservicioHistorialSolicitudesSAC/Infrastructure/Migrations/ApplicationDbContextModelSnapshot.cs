@@ -30,6 +30,15 @@ namespace Infrastructure.Migrations
 
                     MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("col_id"));
 
+                    b.Property<int?>("Colaborador_Lidercol_id")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("Tipos_Colaboradorestc_id")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("Tipos_Usuariostu_id")
+                        .HasColumnType("int");
+
                     b.Property<bool>("col_activo")
                         .HasColumnType("tinyint(1)");
 
@@ -59,11 +68,11 @@ namespace Infrastructure.Migrations
 
                     b.HasKey("col_id");
 
-                    b.HasIndex("col_col_id_lider");
+                    b.HasIndex("Colaborador_Lidercol_id");
 
-                    b.HasIndex("col_tc_id");
+                    b.HasIndex("Tipos_Colaboradorestc_id");
 
-                    b.HasIndex("col_tu_id");
+                    b.HasIndex("Tipos_Usuariostu_id");
 
                     b.ToTable("Colaboradores");
                 });
@@ -92,6 +101,15 @@ namespace Infrastructure.Migrations
 
                     MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("hs_id"));
 
+                    b.Property<int?>("Colaboradorescol_id")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("Estados_Solicitudeses_id")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("Solicitudesso_id")
+                        .HasColumnType("int");
+
                     b.Property<int?>("hs_col_id")
                         .HasColumnType("int");
 
@@ -109,11 +127,11 @@ namespace Infrastructure.Migrations
 
                     b.HasKey("hs_id");
 
-                    b.HasIndex("hs_col_id");
+                    b.HasIndex("Colaboradorescol_id");
 
-                    b.HasIndex("hs_es_id");
+                    b.HasIndex("Estados_Solicitudeses_id");
 
-                    b.HasIndex("hs_so_id");
+                    b.HasIndex("Solicitudesso_id");
 
                     b.ToTable("Historicos_Solicitudes");
                 });
@@ -125,6 +143,21 @@ namespace Infrastructure.Migrations
                         .HasColumnType("int");
 
                     MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("so_id"));
+
+                    b.Property<int?>("Colaboradorescol_id")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("Estados_Solicitudeses_id")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("SolicitudApelacionso_id")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("Tipos_Solicitudests_id")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("Usuariosus_id")
+                        .HasColumnType("int");
 
                     b.Property<int?>("so_col_id")
                         .HasColumnType("int");
@@ -167,15 +200,15 @@ namespace Infrastructure.Migrations
 
                     b.HasKey("so_id");
 
-                    b.HasIndex("so_col_id_colaborador_modificacion");
+                    b.HasIndex("Colaboradorescol_id");
 
-                    b.HasIndex("so_es_id");
+                    b.HasIndex("Estados_Solicitudeses_id");
 
-                    b.HasIndex("so_so_id");
+                    b.HasIndex("SolicitudApelacionso_id");
 
-                    b.HasIndex("so_ts_id");
+                    b.HasIndex("Tipos_Solicitudests_id");
 
-                    b.HasIndex("so_us_id");
+                    b.HasIndex("Usuariosus_id");
 
                     b.ToTable("Solicitudes");
                 });
@@ -262,6 +295,12 @@ namespace Infrastructure.Migrations
 
                     MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("us_id"));
 
+                    b.Property<int?>("Tipo_Identificacionti_id")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("Tipos_Usuariostu_id")
+                        .HasColumnType("int");
+
                     b.Property<string>("us_apellido")
                         .HasColumnType("longtext");
 
@@ -286,9 +325,9 @@ namespace Infrastructure.Migrations
 
                     b.HasKey("us_id");
 
-                    b.HasIndex("us_ti_id");
+                    b.HasIndex("Tipo_Identificacionti_id");
 
-                    b.HasIndex("us_tu_id");
+                    b.HasIndex("Tipos_Usuariostu_id");
 
                     b.ToTable("Usuarios");
                 });
@@ -493,19 +532,15 @@ namespace Infrastructure.Migrations
                 {
                     b.HasOne("Core.Entities.Colaboradores", "Colaborador_Lider")
                         .WithMany()
-                        .HasForeignKey("col_col_id_lider");
+                        .HasForeignKey("Colaborador_Lidercol_id");
 
                     b.HasOne("Core.Entities.Tipos_Colaboradores", "Tipos_Colaboradores")
                         .WithMany()
-                        .HasForeignKey("col_tc_id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("Tipos_Colaboradorestc_id");
 
                     b.HasOne("Core.Entities.Tipos_Usuarios", "Tipos_Usuarios")
                         .WithMany()
-                        .HasForeignKey("col_tu_id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("Tipos_Usuariostu_id");
 
                     b.Navigation("Colaborador_Lider");
 
@@ -518,19 +553,15 @@ namespace Infrastructure.Migrations
                 {
                     b.HasOne("Core.Entities.Colaboradores", "Colaboradores")
                         .WithMany()
-                        .HasForeignKey("hs_col_id");
+                        .HasForeignKey("Colaboradorescol_id");
 
                     b.HasOne("Core.Entities.Estados_Solicitudes", "Estados_Solicitudes")
                         .WithMany()
-                        .HasForeignKey("hs_es_id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("Estados_Solicitudeses_id");
 
                     b.HasOne("Core.Entities.Solicitudes", "Solicitudes")
                         .WithMany()
-                        .HasForeignKey("hs_so_id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("Solicitudesso_id");
 
                     b.Navigation("Colaboradores");
 
@@ -543,29 +574,23 @@ namespace Infrastructure.Migrations
                 {
                     b.HasOne("Core.Entities.Colaboradores", "Colaboradores")
                         .WithMany()
-                        .HasForeignKey("so_col_id_colaborador_modificacion");
+                        .HasForeignKey("Colaboradorescol_id");
 
                     b.HasOne("Core.Entities.Estados_Solicitudes", "Estados_Solicitudes")
                         .WithMany()
-                        .HasForeignKey("so_es_id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("Estados_Solicitudeses_id");
 
                     b.HasOne("Core.Entities.Solicitudes", "SolicitudApelacion")
                         .WithMany()
-                        .HasForeignKey("so_so_id");
+                        .HasForeignKey("SolicitudApelacionso_id");
 
                     b.HasOne("Core.Entities.Tipos_Solicitudes", "Tipos_Solicitudes")
                         .WithMany()
-                        .HasForeignKey("so_ts_id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("Tipos_Solicitudests_id");
 
                     b.HasOne("Core.Entities.Usuarios", "Usuarios")
                         .WithMany()
-                        .HasForeignKey("so_us_id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("Usuariosus_id");
 
                     b.Navigation("Colaboradores");
 
@@ -582,15 +607,11 @@ namespace Infrastructure.Migrations
                 {
                     b.HasOne("Core.Entities.Tipo_Identificacion", "Tipo_Identificacion")
                         .WithMany()
-                        .HasForeignKey("us_ti_id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("Tipo_Identificacionti_id");
 
                     b.HasOne("Core.Entities.Tipos_Usuarios", "Tipos_Usuarios")
                         .WithMany()
-                        .HasForeignKey("us_tu_id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("Tipos_Usuariostu_id");
 
                     b.Navigation("Tipo_Identificacion");
 

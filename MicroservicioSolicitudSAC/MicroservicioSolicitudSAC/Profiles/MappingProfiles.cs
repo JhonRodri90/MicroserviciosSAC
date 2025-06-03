@@ -40,6 +40,9 @@ public class MappingProfiles : Profile
         CreateMap<SolicitudResponse, SolicitudResDto>()
             .ReverseMap();
 
+        CreateMap<SolicitudResponse, SolicitudEncoladoResponse>()
+            .ReverseMap();
+
         CreateMap<Solicitudes, SolicitudResponse>()
             .ForMember(dest => dest.so_id, opt => opt.MapFrom(src => src.so_id))
             .ForMember(dest => dest.so_numero_solicitud, opt => opt.MapFrom(src => src.so_numero_solicitud))

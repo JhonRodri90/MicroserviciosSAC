@@ -25,6 +25,8 @@ builder.Services.AddMassTransit(x =>
         {
             e.ConfigureConsumer<CrearUsuarioConsumer>(context);
         });
+
+        
     });
 });
 

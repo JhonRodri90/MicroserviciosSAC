@@ -96,7 +96,11 @@ public class SolicitudService : ISolicitudService
 
             var entityResponse = _mapper.Map<SolicitudResponse>(entidadNueva);
 
-            await GrabarHistorico(entityResponse, "Creacion", cancellationToken);
+            //await GrabarHistorico(entityResponse, "Creacion", cancellationToken);
+
+            var solicitudEncolado = _mapper.Map<SolicitudEncoladoResponse>(entidadNueva);
+
+            await _publishEndpoint.Publish(solicitudEncolado);
 
             return entityResponse;
         }
@@ -171,7 +175,7 @@ public class SolicitudService : ISolicitudService
 
             var entityResponse = _mapper.Map<SolicitudResponse>(entidadNueva);
 
-            await GrabarHistorico(entityResponse, "Actualizacion", cancellationToken);
+            //await GrabarHistorico(entityResponse, "Actualizacion", cancellationToken);
 
             return entityResponse;
         }
@@ -320,25 +324,5 @@ public class SolicitudService : ISolicitudService
             }
                 
         }
-    }
-
-    private async Task<int> GrabarHistorico(SolicitudResponse entityResponse, string accion, CancellationToken cancellationToken) 
-    {
-    //    var historico = new HistoricoSolicitudRequest
-    //    {
-    //        hs_so_id = entityResponse.so_id,
-    //        hs_es_id = entityResponse.so_es_id,
-    //        hs_col_id = entityResponse.so_col_id,
-    //        hs_detalle = accion,
-    //        hs_fecha = DateTime.Now
-    //    };
-
-    //    var his = new HistoricoSolicitudService(_unitOfWork, _mapper);
-    //    var response = await his.Add(historico, cancellationToken);
-
-    //    if (response != null)
-    //        return 0;
-    //    else
-           return 1;
-    }    
+    }  
 }

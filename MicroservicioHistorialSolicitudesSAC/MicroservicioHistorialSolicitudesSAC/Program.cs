@@ -1,9 +1,38 @@
 using AutoMapper;
+using Core.Contracts;
+using Core.Interfaces;
+using Infrastructure.Consumers;
 using Infrastructure.Data;
+using Infrastructure.Services;
+using Infrastructure.UnitOfWork;
+using MassTransit;
 using MicroservicioHistorialSolicitudesSAC.Profiles;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddMassTransit(x =>
+{
+    x.AddConsumer<CrearSolicitudConsumer>();
+    x.AddConsumer<CrearUsuarioConsumer>();
+    x.UsingRabbitMq((context, cfg) =>
+    {
+        cfg.Host("rabbitmq", "/", h =>
+        {
+            h.Username("guest");
+            h.Password("guest");
+        });
+        cfg.ReceiveEndpoint("crear-solicitud-queue", e =>
+        {
+            e.ConfigureConsumer<CrearSolicitudConsumer>(context);
+        });
+
+        cfg.ReceiveEndpoint("crear-usuarioHistorico-queue", e =>
+        {
+            e.ConfigureConsumer<CrearUsuarioConsumer>(context);
+        });
+    });
+});
 
 // Add services to the container.
 
@@ -52,19 +81,13 @@ var mapperConfig = new MapperConfiguration(mc =>
 IMapper mapper = mapperConfig.CreateMapper();
 
 builder.Services.AddSingleton(mapper);
-/*builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
-builder.Services.AddScoped<IAppConfig, AppConfig>();
-builder.Services.AddScoped<INumeroSolicitudService, NumeroSolicitudService>();
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<ISolicitudService, SolicitudService>();
 builder.Services.AddScoped<IUsuarioService, UsuarioService>();
 builder.Services.AddScoped<IColaboradorService, ColaboradorService>();
 builder.Services.AddScoped<IHistoricoSolicitudService, HistoricoSolicitudService>();
 
-builder.Services.AddSingleton<IAmazonS3>(sp => new AmazonS3Client(
-    builder.Configuration["AWSS3BUCKET:AccessKey"],
-    builder.Configuration["AWSS3BUCKET:SecretKey"],
-    RegionEndpoint.GetBySystemName(builder.Configuration["AWSS3BUCKET:Region"])
-));*/
+
 
 var app = builder.Build();
 
