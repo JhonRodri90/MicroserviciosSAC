@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250530113151_PrimerMigracion")]
-    partial class PrimerMigracion
+    [Migration("20250603234848_primermigracion")]
+    partial class primermigracion
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -25,77 +25,20 @@ namespace Infrastructure.Migrations
 
             MySqlModelBuilderExtensions.AutoIncrementColumns(modelBuilder);
 
-            modelBuilder.Entity("Core.Entities.Colaboradores", b =>
+            modelBuilder.Entity("Core.Entities.Estados_Solicitudes", b =>
                 {
-                    b.Property<int>("col_id")
+                    b.Property<int>("es_id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("col_id"));
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("es_id"));
 
-                    b.Property<bool>("col_activo")
-                        .HasColumnType("tinyint(1)");
-
-                    b.Property<string>("col_apellido")
+                    b.Property<string>("es_nombre_estado")
                         .HasColumnType("longtext");
 
-                    b.Property<int?>("col_col_id_lider")
-                        .HasColumnType("int");
+                    b.HasKey("es_id");
 
-                    b.Property<string>("col_email")
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("col_identificacion")
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("col_nombre")
-                        .HasColumnType("longtext");
-
-                    b.Property<int>("col_tc_id")
-                        .HasColumnType("int");
-
-                    b.Property<string>("col_telefono")
-                        .HasColumnType("longtext");
-
-                    b.Property<int>("col_tu_id")
-                        .HasColumnType("int");
-
-                    b.HasKey("col_id");
-
-                    b.HasIndex("col_col_id_lider");
-
-                    b.HasIndex("col_tc_id");
-
-                    b.HasIndex("col_tu_id");
-
-                    b.ToTable("Colaboradores");
-                });
-
-            modelBuilder.Entity("Core.Entities.Login", b =>
-                {
-                    b.Property<int>("lo_id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("lo_id"));
-
-                    b.Property<bool>("lo_bloqueo")
-                        .HasColumnType("tinyint(1)");
-
-                    b.Property<int>("lo_co_id")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("lo_fechaIngreso")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<string>("lo_password")
-                        .HasColumnType("longtext");
-
-                    b.HasKey("lo_id");
-
-                    b.HasIndex("lo_co_id");
-
-                    b.ToTable("Login");
+                    b.ToTable("Estados_Solicitudes");
                 });
 
             modelBuilder.Entity("Core.Entities.Tipo_Identificacion", b =>
@@ -133,6 +76,29 @@ namespace Infrastructure.Migrations
                     b.ToTable("Tipos_Colaboradores");
                 });
 
+            modelBuilder.Entity("Core.Entities.Tipos_Solicitudes", b =>
+                {
+                    b.Property<int>("ts_id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("ts_id"));
+
+                    b.Property<string>("ts_descripcion")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("ts_nombre")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<int>("ts_prioridad")
+                        .HasColumnType("int");
+
+                    b.HasKey("ts_id");
+
+                    b.ToTable("Tipos_Solicitudes");
+                });
+
             modelBuilder.Entity("Core.Entities.Tipos_Usuarios", b =>
                 {
                     b.Property<int>("tu_id")
@@ -147,45 +113,6 @@ namespace Infrastructure.Migrations
                     b.HasKey("tu_id");
 
                     b.ToTable("Tipos_Usuarios");
-                });
-
-            modelBuilder.Entity("Core.Entities.Usuarios", b =>
-                {
-                    b.Property<int>("us_id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("us_id"));
-
-                    b.Property<string>("us_apellido")
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("us_correo")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("us_identificacion")
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("us_nombre")
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("us_telefono")
-                        .HasColumnType("longtext");
-
-                    b.Property<int>("us_ti_id")
-                        .HasColumnType("int");
-
-                    b.Property<int>("us_tu_id")
-                        .HasColumnType("int");
-
-                    b.HasKey("us_id");
-
-                    b.HasIndex("us_ti_id");
-
-                    b.HasIndex("us_tu_id");
-
-                    b.ToTable("Usuarios");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -382,61 +309,6 @@ namespace Infrastructure.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens", (string)null);
-                });
-
-            modelBuilder.Entity("Core.Entities.Colaboradores", b =>
-                {
-                    b.HasOne("Core.Entities.Colaboradores", "Colaborador_Lider")
-                        .WithMany()
-                        .HasForeignKey("col_col_id_lider");
-
-                    b.HasOne("Core.Entities.Tipos_Colaboradores", "Tipos_Colaboradores")
-                        .WithMany()
-                        .HasForeignKey("col_tc_id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Core.Entities.Tipos_Usuarios", "Tipos_Usuarios")
-                        .WithMany()
-                        .HasForeignKey("col_tu_id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Colaborador_Lider");
-
-                    b.Navigation("Tipos_Colaboradores");
-
-                    b.Navigation("Tipos_Usuarios");
-                });
-
-            modelBuilder.Entity("Core.Entities.Login", b =>
-                {
-                    b.HasOne("Core.Entities.Colaboradores", "Colaboradores")
-                        .WithMany()
-                        .HasForeignKey("lo_co_id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Colaboradores");
-                });
-
-            modelBuilder.Entity("Core.Entities.Usuarios", b =>
-                {
-                    b.HasOne("Core.Entities.Tipo_Identificacion", "Tipo_Identificacion")
-                        .WithMany()
-                        .HasForeignKey("us_ti_id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Core.Entities.Tipos_Usuarios", "Tipos_Usuarios")
-                        .WithMany()
-                        .HasForeignKey("us_tu_id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Tipo_Identificacion");
-
-                    b.Navigation("Tipos_Usuarios");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

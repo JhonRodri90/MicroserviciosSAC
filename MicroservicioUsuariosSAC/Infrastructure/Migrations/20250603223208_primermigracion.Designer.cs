@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250530111347_PrimerMigracion")]
-    partial class PrimerMigracion
+    [Migration("20250603223208_primermigracion")]
+    partial class primermigracion
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -71,116 +71,31 @@ namespace Infrastructure.Migrations
                     b.ToTable("Colaboradores");
                 });
 
-            modelBuilder.Entity("Core.Entities.Estados_Solicitudes", b =>
+            modelBuilder.Entity("Core.Entities.Login", b =>
                 {
-                    b.Property<int>("es_id")
+                    b.Property<int>("lo_id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("es_id"));
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("lo_id"));
 
-                    b.Property<string>("es_nombre_estado")
-                        .HasColumnType("longtext");
+                    b.Property<bool>("lo_bloqueo")
+                        .HasColumnType("tinyint(1)");
 
-                    b.HasKey("es_id");
-
-                    b.ToTable("Estados_Solicitudes");
-                });
-
-            modelBuilder.Entity("Core.Entities.Historicos_Solicitudes", b =>
-                {
-                    b.Property<int>("hs_id")
-                        .ValueGeneratedOnAdd()
+                    b.Property<int>("lo_co_id")
                         .HasColumnType("int");
 
-                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("hs_id"));
-
-                    b.Property<int?>("hs_col_id")
-                        .HasColumnType("int");
-
-                    b.Property<string>("hs_detalle")
-                        .HasColumnType("longtext");
-
-                    b.Property<int>("hs_es_id")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("hs_fecha")
+                    b.Property<DateTime>("lo_fechaIngreso")
                         .HasColumnType("datetime(6)");
 
-                    b.Property<int>("hs_so_id")
-                        .HasColumnType("int");
-
-                    b.HasKey("hs_id");
-
-                    b.HasIndex("hs_col_id");
-
-                    b.HasIndex("hs_es_id");
-
-                    b.HasIndex("hs_so_id");
-
-                    b.ToTable("Historicos_Solicitudes");
-                });
-
-            modelBuilder.Entity("Core.Entities.Solicitudes", b =>
-                {
-                    b.Property<int>("so_id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("so_id"));
-
-                    b.Property<int?>("so_col_id")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("so_col_id_colaborador_modificacion")
-                        .HasColumnType("int");
-
-                    b.Property<string>("so_descripcion")
+                    b.Property<string>("lo_password")
                         .HasColumnType("longtext");
 
-                    b.Property<int>("so_es_id")
-                        .HasColumnType("int");
+                    b.HasKey("lo_id");
 
-                    b.Property<DateTime>("so_fecha_creacion")
-                        .HasColumnType("datetime(6)");
+                    b.HasIndex("lo_co_id");
 
-                    b.Property<DateTime>("so_fecha_modificacion")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<string>("so_numero_solicitud")
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("so_observaciones")
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("so_respuesta")
-                        .HasColumnType("longtext");
-
-                    b.Property<int?>("so_so_id")
-                        .HasColumnType("int");
-
-                    b.Property<int>("so_ts_id")
-                        .HasColumnType("int");
-
-                    b.Property<string>("so_url_image")
-                        .HasColumnType("longtext");
-
-                    b.Property<int>("so_us_id")
-                        .HasColumnType("int");
-
-                    b.HasKey("so_id");
-
-                    b.HasIndex("so_col_id_colaborador_modificacion");
-
-                    b.HasIndex("so_es_id");
-
-                    b.HasIndex("so_so_id");
-
-                    b.HasIndex("so_ts_id");
-
-                    b.HasIndex("so_us_id");
-
-                    b.ToTable("Solicitudes");
+                    b.ToTable("Login");
                 });
 
             modelBuilder.Entity("Core.Entities.Tipo_Identificacion", b =>
@@ -216,29 +131,6 @@ namespace Infrastructure.Migrations
                     b.HasKey("tc_id");
 
                     b.ToTable("Tipos_Colaboradores");
-                });
-
-            modelBuilder.Entity("Core.Entities.Tipos_Solicitudes", b =>
-                {
-                    b.Property<int>("ts_id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("ts_id"));
-
-                    b.Property<string>("ts_descripcion")
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("ts_nombre")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<int>("ts_prioridad")
-                        .HasColumnType("int");
-
-                    b.HasKey("ts_id");
-
-                    b.ToTable("Tipos_Solicitudes");
                 });
 
             modelBuilder.Entity("Core.Entities.Tipos_Usuarios", b =>
@@ -517,68 +409,15 @@ namespace Infrastructure.Migrations
                     b.Navigation("Tipos_Usuarios");
                 });
 
-            modelBuilder.Entity("Core.Entities.Historicos_Solicitudes", b =>
+            modelBuilder.Entity("Core.Entities.Login", b =>
                 {
                     b.HasOne("Core.Entities.Colaboradores", "Colaboradores")
                         .WithMany()
-                        .HasForeignKey("hs_col_id");
-
-                    b.HasOne("Core.Entities.Estados_Solicitudes", "Estados_Solicitudes")
-                        .WithMany()
-                        .HasForeignKey("hs_es_id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Core.Entities.Solicitudes", "Solicitudes")
-                        .WithMany()
-                        .HasForeignKey("hs_so_id")
+                        .HasForeignKey("lo_co_id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Colaboradores");
-
-                    b.Navigation("Estados_Solicitudes");
-
-                    b.Navigation("Solicitudes");
-                });
-
-            modelBuilder.Entity("Core.Entities.Solicitudes", b =>
-                {
-                    b.HasOne("Core.Entities.Colaboradores", "Colaboradores")
-                        .WithMany()
-                        .HasForeignKey("so_col_id_colaborador_modificacion");
-
-                    b.HasOne("Core.Entities.Estados_Solicitudes", "Estados_Solicitudes")
-                        .WithMany()
-                        .HasForeignKey("so_es_id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Core.Entities.Solicitudes", "SolicitudApelacion")
-                        .WithMany()
-                        .HasForeignKey("so_so_id");
-
-                    b.HasOne("Core.Entities.Tipos_Solicitudes", "Tipos_Solicitudes")
-                        .WithMany()
-                        .HasForeignKey("so_ts_id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Core.Entities.Usuarios", "Usuarios")
-                        .WithMany()
-                        .HasForeignKey("so_us_id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Colaboradores");
-
-                    b.Navigation("Estados_Solicitudes");
-
-                    b.Navigation("SolicitudApelacion");
-
-                    b.Navigation("Tipos_Solicitudes");
-
-                    b.Navigation("Usuarios");
                 });
 
             modelBuilder.Entity("Core.Entities.Usuarios", b =>

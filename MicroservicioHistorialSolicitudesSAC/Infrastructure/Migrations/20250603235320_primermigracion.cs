@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Infrastructure.Migrations
 {
     /// <inheritdoc />
-    public partial class PrimerMigracion : Migration
+    public partial class primermigracion : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -295,28 +295,29 @@ namespace Infrastructure.Migrations
                     col_tc_id = table.Column<int>(type: "int", nullable: false),
                     col_tu_id = table.Column<int>(type: "int", nullable: false),
                     col_col_id_lider = table.Column<int>(type: "int", nullable: true),
-                    col_activo = table.Column<bool>(type: "tinyint(1)", nullable: false)
+                    col_activo = table.Column<bool>(type: "tinyint(1)", nullable: false),
+                    Tipos_Colaboradorestc_id = table.Column<int>(type: "int", nullable: true),
+                    Tipos_Usuariostu_id = table.Column<int>(type: "int", nullable: true),
+                    Colaborador_Lidercol_id = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Colaboradores", x => x.col_id);
                     table.ForeignKey(
-                        name: "FK_Colaboradores_Colaboradores_col_col_id_lider",
-                        column: x => x.col_col_id_lider,
+                        name: "FK_Colaboradores_Colaboradores_Colaborador_Lidercol_id",
+                        column: x => x.Colaborador_Lidercol_id,
                         principalTable: "Colaboradores",
                         principalColumn: "col_id");
                     table.ForeignKey(
-                        name: "FK_Colaboradores_Tipos_Colaboradores_col_tc_id",
-                        column: x => x.col_tc_id,
+                        name: "FK_Colaboradores_Tipos_Colaboradores_Tipos_Colaboradorestc_id",
+                        column: x => x.Tipos_Colaboradorestc_id,
                         principalTable: "Tipos_Colaboradores",
-                        principalColumn: "tc_id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "tc_id");
                     table.ForeignKey(
-                        name: "FK_Colaboradores_Tipos_Usuarios_col_tu_id",
-                        column: x => x.col_tu_id,
+                        name: "FK_Colaboradores_Tipos_Usuarios_Tipos_Usuariostu_id",
+                        column: x => x.Tipos_Usuariostu_id,
                         principalTable: "Tipos_Usuarios",
-                        principalColumn: "tu_id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "tu_id");
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
 
@@ -337,23 +338,23 @@ namespace Infrastructure.Migrations
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     us_tu_id = table.Column<int>(type: "int", nullable: false),
                     us_correo = table.Column<string>(type: "longtext", nullable: false)
-                        .Annotation("MySql:CharSet", "utf8mb4")
+                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    Tipo_Identificacionti_id = table.Column<int>(type: "int", nullable: true),
+                    Tipos_Usuariostu_id = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Usuarios", x => x.us_id);
                     table.ForeignKey(
-                        name: "FK_Usuarios_Tipo_Identificacions_us_ti_id",
-                        column: x => x.us_ti_id,
+                        name: "FK_Usuarios_Tipo_Identificacions_Tipo_Identificacionti_id",
+                        column: x => x.Tipo_Identificacionti_id,
                         principalTable: "Tipo_Identificacions",
-                        principalColumn: "ti_id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "ti_id");
                     table.ForeignKey(
-                        name: "FK_Usuarios_Tipos_Usuarios_us_tu_id",
-                        column: x => x.us_tu_id,
+                        name: "FK_Usuarios_Tipos_Usuarios_Tipos_Usuariostu_id",
+                        column: x => x.Tipos_Usuariostu_id,
                         principalTable: "Tipos_Usuarios",
-                        principalColumn: "tu_id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "tu_id");
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
 
@@ -380,39 +381,41 @@ namespace Infrastructure.Migrations
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     so_fecha_modificacion = table.Column<DateTime>(type: "datetime(6)", nullable: false),
                     so_col_id_colaborador_modificacion = table.Column<int>(type: "int", nullable: true),
-                    so_so_id = table.Column<int>(type: "int", nullable: true)
+                    so_so_id = table.Column<int>(type: "int", nullable: true),
+                    Tipos_Solicitudests_id = table.Column<int>(type: "int", nullable: true),
+                    Estados_Solicitudeses_id = table.Column<int>(type: "int", nullable: true),
+                    Usuariosus_id = table.Column<int>(type: "int", nullable: true),
+                    Colaboradorescol_id = table.Column<int>(type: "int", nullable: true),
+                    SolicitudApelacionso_id = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Solicitudes", x => x.so_id);
                     table.ForeignKey(
-                        name: "FK_Solicitudes_Colaboradores_so_col_id_colaborador_modificacion",
-                        column: x => x.so_col_id_colaborador_modificacion,
+                        name: "FK_Solicitudes_Colaboradores_Colaboradorescol_id",
+                        column: x => x.Colaboradorescol_id,
                         principalTable: "Colaboradores",
                         principalColumn: "col_id");
                     table.ForeignKey(
-                        name: "FK_Solicitudes_Estados_Solicitudes_so_es_id",
-                        column: x => x.so_es_id,
+                        name: "FK_Solicitudes_Estados_Solicitudes_Estados_Solicitudeses_id",
+                        column: x => x.Estados_Solicitudeses_id,
                         principalTable: "Estados_Solicitudes",
-                        principalColumn: "es_id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "es_id");
                     table.ForeignKey(
-                        name: "FK_Solicitudes_Solicitudes_so_so_id",
-                        column: x => x.so_so_id,
+                        name: "FK_Solicitudes_Solicitudes_SolicitudApelacionso_id",
+                        column: x => x.SolicitudApelacionso_id,
                         principalTable: "Solicitudes",
                         principalColumn: "so_id");
                     table.ForeignKey(
-                        name: "FK_Solicitudes_Tipos_Solicitudes_so_ts_id",
-                        column: x => x.so_ts_id,
+                        name: "FK_Solicitudes_Tipos_Solicitudes_Tipos_Solicitudests_id",
+                        column: x => x.Tipos_Solicitudests_id,
                         principalTable: "Tipos_Solicitudes",
-                        principalColumn: "ts_id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "ts_id");
                     table.ForeignKey(
-                        name: "FK_Solicitudes_Usuarios_so_us_id",
-                        column: x => x.so_us_id,
+                        name: "FK_Solicitudes_Usuarios_Usuariosus_id",
+                        column: x => x.Usuariosus_id,
                         principalTable: "Usuarios",
-                        principalColumn: "us_id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "us_id");
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
 
@@ -427,28 +430,29 @@ namespace Infrastructure.Migrations
                     hs_col_id = table.Column<int>(type: "int", nullable: true),
                     hs_detalle = table.Column<string>(type: "longtext", nullable: true)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    hs_fecha = table.Column<DateTime>(type: "datetime(6)", nullable: false)
+                    hs_fecha = table.Column<DateTime>(type: "datetime(6)", nullable: false),
+                    Solicitudesso_id = table.Column<int>(type: "int", nullable: true),
+                    Estados_Solicitudeses_id = table.Column<int>(type: "int", nullable: true),
+                    Colaboradorescol_id = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Historicos_Solicitudes", x => x.hs_id);
                     table.ForeignKey(
-                        name: "FK_Historicos_Solicitudes_Colaboradores_hs_col_id",
-                        column: x => x.hs_col_id,
+                        name: "FK_Historicos_Solicitudes_Colaboradores_Colaboradorescol_id",
+                        column: x => x.Colaboradorescol_id,
                         principalTable: "Colaboradores",
                         principalColumn: "col_id");
                     table.ForeignKey(
-                        name: "FK_Historicos_Solicitudes_Estados_Solicitudes_hs_es_id",
-                        column: x => x.hs_es_id,
+                        name: "FK_Historicos_Solicitudes_Estados_Solicitudes_Estados_Solicitud~",
+                        column: x => x.Estados_Solicitudeses_id,
                         principalTable: "Estados_Solicitudes",
-                        principalColumn: "es_id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "es_id");
                     table.ForeignKey(
-                        name: "FK_Historicos_Solicitudes_Solicitudes_hs_so_id",
-                        column: x => x.hs_so_id,
+                        name: "FK_Historicos_Solicitudes_Solicitudes_Solicitudesso_id",
+                        column: x => x.Solicitudesso_id,
                         principalTable: "Solicitudes",
-                        principalColumn: "so_id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "so_id");
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
 
@@ -490,69 +494,69 @@ namespace Infrastructure.Migrations
                 unique: true);
 
             migrationBuilder.CreateIndex(
-                name: "IX_Colaboradores_col_col_id_lider",
+                name: "IX_Colaboradores_Colaborador_Lidercol_id",
                 table: "Colaboradores",
-                column: "col_col_id_lider");
+                column: "Colaborador_Lidercol_id");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Colaboradores_col_tc_id",
+                name: "IX_Colaboradores_Tipos_Colaboradorestc_id",
                 table: "Colaboradores",
-                column: "col_tc_id");
+                column: "Tipos_Colaboradorestc_id");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Colaboradores_col_tu_id",
+                name: "IX_Colaboradores_Tipos_Usuariostu_id",
                 table: "Colaboradores",
-                column: "col_tu_id");
+                column: "Tipos_Usuariostu_id");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Historicos_Solicitudes_hs_col_id",
+                name: "IX_Historicos_Solicitudes_Colaboradorescol_id",
                 table: "Historicos_Solicitudes",
-                column: "hs_col_id");
+                column: "Colaboradorescol_id");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Historicos_Solicitudes_hs_es_id",
+                name: "IX_Historicos_Solicitudes_Estados_Solicitudeses_id",
                 table: "Historicos_Solicitudes",
-                column: "hs_es_id");
+                column: "Estados_Solicitudeses_id");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Historicos_Solicitudes_hs_so_id",
+                name: "IX_Historicos_Solicitudes_Solicitudesso_id",
                 table: "Historicos_Solicitudes",
-                column: "hs_so_id");
+                column: "Solicitudesso_id");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Solicitudes_so_col_id_colaborador_modificacion",
+                name: "IX_Solicitudes_Colaboradorescol_id",
                 table: "Solicitudes",
-                column: "so_col_id_colaborador_modificacion");
+                column: "Colaboradorescol_id");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Solicitudes_so_es_id",
+                name: "IX_Solicitudes_Estados_Solicitudeses_id",
                 table: "Solicitudes",
-                column: "so_es_id");
+                column: "Estados_Solicitudeses_id");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Solicitudes_so_so_id",
+                name: "IX_Solicitudes_SolicitudApelacionso_id",
                 table: "Solicitudes",
-                column: "so_so_id");
+                column: "SolicitudApelacionso_id");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Solicitudes_so_ts_id",
+                name: "IX_Solicitudes_Tipos_Solicitudests_id",
                 table: "Solicitudes",
-                column: "so_ts_id");
+                column: "Tipos_Solicitudests_id");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Solicitudes_so_us_id",
+                name: "IX_Solicitudes_Usuariosus_id",
                 table: "Solicitudes",
-                column: "so_us_id");
+                column: "Usuariosus_id");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Usuarios_us_ti_id",
+                name: "IX_Usuarios_Tipo_Identificacionti_id",
                 table: "Usuarios",
-                column: "us_ti_id");
+                column: "Tipo_Identificacionti_id");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Usuarios_us_tu_id",
+                name: "IX_Usuarios_Tipos_Usuariostu_id",
                 table: "Usuarios",
-                column: "us_tu_id");
+                column: "Tipos_Usuariostu_id");
         }
 
         /// <inheritdoc />

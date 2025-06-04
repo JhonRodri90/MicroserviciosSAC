@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioUsuariosSAC\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioUsuariosSAC\\Infrastructure\\Migrations\\20250603223208_primermigracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Infrastructure\\Migrations\\20250603223208_primermigracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C43ECF0-F998-47B4-9552-B5CD1728854E}|MicroservicioUsuariosSAC\\MicroservicioUsuariosSAC.csproj|c:\\users\\hp\\onedrive\\documentos\\jhon\\pica\\microserviciossac\\microserviciousuariossac\\microserviciousuariossac\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6C43ECF0-F998-47B4-9552-B5CD1728854E}|MicroservicioUsuariosSAC\\MicroservicioUsuariosSAC.csproj|solutionrelative:microserviciousuariossac\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCFAA9E2-07EF-4D51-9343-09B759808D64}|Infrastructure\\Infrastructure.csproj|c:\\users\\hp\\onedrive\\documentos\\jhon\\pica\\microserviciossac\\microserviciousuariossac\\infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCFAA9E2-07EF-4D51-9343-09B759808D64}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCFAA9E2-07EF-4D51-9343-09B759808D64}|Infrastructure\\Infrastructure.csproj|c:\\users\\hp\\onedrive\\documentos\\jhon\\pica\\microserviciossac\\microserviciousuariossac\\infrastructure\\services\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCFAA9E2-07EF-4D51-9343-09B759808D64}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\services\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FCFAA9E2-07EF-4D51-9343-09B759808D64}|Infrastructure\\Infrastructure.csproj|c:\\users\\hp\\onedrive\\documentos\\jhon\\pica\\microserviciossac\\microserviciousuariossac\\infrastructure\\consumers\\crearusuarioconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FCFAA9E2-07EF-4D51-9343-09B759808D64}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\consumers\\crearusuarioconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{6C43ECF0-F998-47B4-9552-B5CD1728854E}|MicroservicioUsuariosSAC\\MicroservicioUsuariosSAC.csproj|c:\\users\\hp\\onedrive\\documentos\\jhon\\pica\\microserviciossac\\microserviciousuariossac\\microserviciousuariossac\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6C43ECF0-F998-47B4-9552-B5CD1728854E}|MicroservicioUsuariosSAC\\MicroservicioUsuariosSAC.csproj|solutionrelative:microserviciousuariossac\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FCFAA9E2-07EF-4D51-9343-09B759808D64}|Infrastructure\\Infrastructure.csproj|c:\\users\\hp\\onedrive\\documentos\\jhon\\pica\\microserviciossac\\microserviciousuariossac\\infrastructure\\services\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCFAA9E2-07EF-4D51-9343-09B759808D64}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\services\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,11 +38,49 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20250603223208_primermigracion.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioUsuariosSAC\\Infrastructure\\Migrations\\20250603223208_primermigracion.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20250603223208_primermigracion.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioUsuariosSAC\\Infrastructure\\Migrations\\20250603223208_primermigracion.cs",
+              "RelativeToolTip": "Infrastructure\\Migrations\\20250603223208_primermigracion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T22:32:08.369Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioUsuariosSAC\\Infrastructure\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioUsuariosSAC\\Infrastructure\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Infrastructure\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T19:49:25.572Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioUsuariosSAC\\MicroservicioUsuariosSAC\\appsettings.json",
+              "RelativeDocumentMoniker": "MicroservicioUsuariosSAC\\appsettings.json",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioUsuariosSAC\\MicroservicioUsuariosSAC\\appsettings.json",
+              "RelativeToolTip": "MicroservicioUsuariosSAC\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-03T16:38:47.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "UsuariosController.cs",
               "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioUsuariosSAC\\MicroservicioUsuariosSAC\\Controllers\\UsuariosController.cs",
               "RelativeDocumentMoniker": "MicroservicioUsuariosSAC\\Controllers\\UsuariosController.cs",
@@ -38,34 +88,31 @@
               "RelativeToolTip": "MicroservicioUsuariosSAC\\Controllers\\UsuariosController.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAACQAAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T04:18:15.475Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-01T04:18:15.475Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "CrearUsuarioConsumer.cs",
               "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioUsuariosSAC\\Infrastructure\\Consumers\\CrearUsuarioConsumer.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Consumers\\CrearUsuarioConsumer.cs",
               "ToolTip": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioUsuariosSAC\\Infrastructure\\Consumers\\CrearUsuarioConsumer.cs",
               "RelativeToolTip": "Infrastructure\\Consumers\\CrearUsuarioConsumer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwAcAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T04:16:11.397Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-01T04:16:11.397Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioUsuariosSAC\\MicroservicioUsuariosSAC\\Program.cs",
               "RelativeDocumentMoniker": "MicroservicioUsuariosSAC\\Program.cs",
               "ToolTip": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioUsuariosSAC\\MicroservicioUsuariosSAC\\Program.cs",
               "RelativeToolTip": "MicroservicioUsuariosSAC\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAADwvxkAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T04:08:46.941Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-01T04:08:46.941Z"
             },
             {
               "$type": "Document",
@@ -75,10 +122,9 @@
               "RelativeDocumentMoniker": "Infrastructure\\Services\\UsuarioService.cs",
               "ToolTip": "C:\\Users\\HP\\OneDrive\\Documentos\\JHON\\PICA\\MicroserviciosSAC\\MicroservicioUsuariosSAC\\Infrastructure\\Services\\UsuarioService.cs",
               "RelativeToolTip": "Infrastructure\\Services\\UsuarioService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwBsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T04:06:51.281Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-01T04:06:51.281Z"
             }
           ]
         }
